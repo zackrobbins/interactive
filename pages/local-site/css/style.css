@@ -1,0 +1,2433 @@
+/* REQUIRED CSS --- DO NOT DELETE */
+
+.letter-definition {
+	display: none;
+}
+
+/* CUSTOM TYPEFACE CSS --- INSERT YOUR OWN HERE */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.letter {
+  display: inline-block;
+	height: 7em;
+	margin: 8px 8px 0px 8px;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.space {
+  width: 112px;
+  height: 6em;
+}
+
+.punch {
+    position: relative;
+    display: inline-block;
+    height: 7em;
+    border: none;
+}
+
+.pixel {
+    height: 1em;
+    width: 1em;
+    background-color: black;
+}
+
+.leading {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.letterSpacing {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.uppercase, .lowercase, .numbers, .punctuation, .symbols, .home {
+    display: block;
+}
+
+.letters {
+    font-size: 2em;
+
+}
+
+
+/*
+====================
+TONIGHT SECTION
+====================
+*/
+
+
+.current-day {
+    height: 93%;
+}
+
+.countdown {
+    width: 100%;
+    padding-top: 11em;
+    padding-bottom: 5em;
+}
+
+.countdown .pixel {
+    border-radius:0%;
+    transform: rotate(0);
+    width: 4em;
+    height: 1em;
+    animation: spin 10s linear 0s infinite;
+    background-color:black;
+}
+
+/*
+ Safari 4.0 - 8.0 
+@-webkit-keyframes resize {
+    0%   {width:5em; height:5em;}
+    50%  {width:.2em; height:.2em;}
+    100% {width:5em; height:5em;}
+}
+*/
+
+/* Standard syntax */
+@keyframes spin {
+    0%   {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 7em;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+
+
+/*
+====================
+MONTH SECTIONS
+====================
+*/
+
+
+.see-more {
+    height: 6em;
+    background-color:yellow;
+}
+
+.archive-wrap {
+    height: 2em;
+    padding: 2em;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.archive {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+
+}
+
+.february {
+
+    background-color: #689cff;
+}
+
+.february .pixel {
+    border-radius: 50%;
+    width: .5em;
+    height: .5em;
+}
+
+.march {
+
+    background-color: #36cbff;
+}
+
+.march .pixel {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+
+.april {
+    background-color: #00e8ff;
+}
+
+.archive h1 {
+    color: black;
+    opacity: .125;
+}
+
+.section pixel {
+        background-color: black;
+}
+
+.april .pixel {
+    border-radius: 0;
+    width: 2em;
+    height: 1em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+
+    
+}
+
+.april .sign-up {
+    color: yellow;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+.text-block {
+    padding: 50px;
+}
+
+
+
+
+
+/*
+====================
+LETTER WIDTHS
+====================
+*/
+
+.width2em {width:2em;}
+.width3em {width:3em;}
+.width4em {width:4em;}
+.width5em {width:5em;}
+.width6em {width:6em;}
+.width7em {width:7em;}
+
+
+/*
+===========
+ROWS
+===========
+*/
+
+.y0 {
+    position: absolute;
+    top: -1em;
+}
+
+.y1 {
+    position: absolute;
+    top: 0;
+}
+
+.y2 {
+    position: absolute;
+    top: 1em;
+}
+
+.y3 {
+    position: absolute;
+    top: 2em;
+}
+
+.y4 {
+    position: absolute;
+    top: 3em;
+}
+
+.y5 {
+    position: absolute;
+    top: 4em;
+}
+
+.y6 {
+    position: absolute;
+    top: 5em;
+}
+
+.y7 {
+    position: absolute;
+    top: 6em;
+}
+
+.y8 {
+    position: absolute;
+    top: 7em;
+}
+
+/*
+===========
+COLUMNS
+===========
+*/
+
+
+.x1 {
+    position: absolute;
+    left: 0;
+}
+
+.x2 {
+    position: absolute;
+    left: 1em;
+}
+
+.x3 {
+    position: absolute;
+    left: 2em;
+}
+
+.x4 {
+    position: absolute;
+    left: 3em;
+}
+
+.x5 {
+    position: absolute;
+    left: 4em;
+}
+
+.x6 {
+    position: absolute;
+    left: 5em;
+}
+
+.x7 {
+    position: absolute;
+    left: 6em;
+}
+
+
+/*
+==============================
+LETTER A
+==============================
+*/
+
+.A .y1-x1 {opacity: 0.0;}
+.A .y1-x2 {opacity: 0.1;}
+.A .y1-x3 {opacity: 0.5;}
+.A .y1-x4 {opacity: 0.0;}
+.A .y1-x5 {opacity: 0.0;}
+
+.A .y2-x1 {opacity: 0.0;}
+.A .y2-x2 {opacity: 0.5;}
+.A .y2-x3 {opacity: 0.9;}
+.A .y2-x4 {opacity: 0.3;}
+.A .y2-x5 {opacity: 0.0;}
+
+.A .y3-x1 {opacity: 0.1;}
+.A .y3-x2 {opacity: 0.6;}
+.A .y3-x3 {opacity: 0.1;}
+.A .y3-x4 {opacity: 0.5;}
+.A .y3-x5 {opacity: 0.0;}
+
+.A .y4-x1 {opacity: 0.4;}
+.A .y4-x2 {opacity: 0.9;}
+.A .y4-x3 {opacity: 0.4;}
+.A .y4-x4 {opacity: 0.9;}
+.A .y4-x5 {opacity: 0.2;}
+
+.A .y5-x1 {opacity: 0.6;}
+.A .y5-x2 {opacity: 0.4;}
+.A .y5-x3 {opacity: 0.2;}
+.A .y5-x4 {opacity: 0.5;}
+.A .y5-x5 {opacity: 0.6;}
+
+.A .y6-x1 {opacity: 0.5;}
+.A .y6-x2 {opacity: 0.1;}
+.A .y6-x3 {opacity: 0.0;}
+.A .y6-x4 {opacity: 0.2;}
+.A .y6-x5 {opacity: 0.5;}
+
+
+
+/*
+==============================
+LETTER B
+==============================
+*/
+
+.B .y1-x1 {opacity: 0.4;}
+.B .y1-x2 {opacity: 0.6;}
+.B .y1-x3 {opacity: 0.7;}
+.B .y1-x4 {opacity: 0.3;}
+.B .y1-x5 {opacity: 0.0;}
+
+.B .y2-x1 {opacity: 0.8;}
+.B .y2-x2 {opacity: 0.3;}
+.B .y2-x3 {opacity: 0.0;}
+.B .y2-x4 {opacity: 0.9;}
+.B .y2-x5 {opacity: 0.1;}
+
+.B .y3-x1 {opacity: 0.8;}
+.B .y3-x2 {opacity: 0.6;}
+.B .y3-x3 {opacity: 0.7;}
+.B .y3-x4 {opacity: 0.6;}
+.B .y3-x5 {opacity: 0.0;}
+
+.B .y4-x1 {opacity: 0.8;}
+.B .y4-x2 {opacity: 0.5;}
+.B .y4-x3 {opacity: 0.3;}
+.B .y4-x4 {opacity: 0.5;}
+.B .y4-x5 {opacity: 0.1;}
+
+.B .y5-x1 {opacity: 0.8;}
+.B .y5-x2 {opacity: 0.4;}
+.B .y5-x3 {opacity: 0.0;}
+.B .y5-x4 {opacity: 0.9;}
+.B .y5-x5 {opacity: 0.2;}
+
+.B .y6-x1 {opacity: 0.5;}
+.B .y6-x2 {opacity: 0.6;}
+.B .y6-x3 {opacity: 0.7;}
+.B .y6-x4 {opacity: 0.4;}
+.B .y6-x5 {opacity: 0.0;}
+
+
+
+
+/*
+==============================
+LETTER C
+==============================
+*/
+
+.C .y1-x1 {opacity: 0.0;}
+.C .y1-x2 {opacity: 0.4;}
+.C .y1-x3 {opacity: 0.6;}
+.C .y1-x4 {opacity: 0.5;}
+.C .y1-x5 {opacity: 0.2;}
+.C .y1-x6 {opacity: 0.0;}
+
+.C .y2-x1 {opacity: 0.4;}
+.C .y2-x2 {opacity: 0.9;}
+.C .y2-x3 {opacity: 0.2;}
+.C .y2-x4 {opacity: 0.4;}
+.C .y2-x5 {opacity: 0.9;}
+.C .y2-x6 {opacity: 0.2;}
+
+.C .y3-x1 {opacity: 0.8;}
+.C .y3-x2 {opacity: 0.3;}
+.C .y3-x3 {opacity: 0.0;}
+.C .y3-x4 {opacity: 0.0;}
+.C .y3-x5 {opacity: 0.0;}
+.C .y3-x6 {opacity: 0.0;}
+
+.C .y4-x1 {opacity: 0.8;}
+.C .y4-x2 {opacity: 0.3;}
+.C .y4-x3 {opacity: 0.0;}
+.C .y4-x4 {opacity: 0.0;}
+.C .y4-x5 {opacity: 0.7;}
+.C .y4-x6 {opacity: 0.2;}
+
+.C .y5-x1 {opacity: 0.4;}
+.C .y5-x2 {opacity: 0.9;}
+.C .y5-x3 {opacity: 0.2;}
+.C .y5-x4 {opacity: 0.4;}
+.C .y5-x5 {opacity: 0.4;}
+.C .y5-x6 {opacity: 0.2;}
+
+.C .y6-x1 {opacity: 0.0;}
+.C .y6-x2 {opacity: 0.4;}
+.C .y6-x3 {opacity: 0.6;}
+.C .y6-x4 {opacity: 0.7;}
+.C .y6-x5 {opacity: 0.2;}
+.C .y6-x6 {opacity: 0.0;}
+
+
+/*
+==============================
+LETTER D
+==============================
+*/
+
+.D .y1-x1, .D .y6-x1 {opacity: 0.2;}
+.D .y1-x2, .D .y6-x2 {opacity: 0.6;}
+.D .y1-x3, .D .y6-x3 {opacity: 0.6;}
+.D .y1-x4, .D .y6-x4 {opacity: 0.4;}
+.D .y1-x5, .D .y6-x5 {opacity: 0.2;}
+.D .y1-x6, .D .y6-x6 {opacity: 0.0;}
+
+.D .y2-x1, .D .y5-x1 {opacity: 0.6;}
+.D .y2-x2, .D .y5-x2 {opacity: 0.9;}
+.D .y2-x3, .D .y5-x3 {opacity: 0.2;}
+.D .y2-x4, .D .y5-x4 {opacity: 0.9;}
+.D .y2-x5, .D .y5-x5 {opacity: 0.6;}
+.D .y2-x6, .D .y5-x6 {opacity: 0.2;}
+
+.D .y3-x1, .D .y4-x1 {opacity: 0.6;}
+.D .y3-x2, .D .y4-x2 {opacity: 0.7;}
+.D .y3-x3, .D .y4-x3 {opacity: 0.0;}
+.D .y3-x4, .D .y4-x4 {opacity: 0.0;}
+.D .y3-x5, .D .y4-x5 {opacity: 0.9;}
+.D .y3-x6, .D .y4-x6 {opacity: 0.3;}
+
+
+/*
+==============================
+LETTER E
+==============================
+*/
+
+.E .y1-x1, .E .y6-x1 {opacity: 0.4;}
+.E .y1-x2, .E .y6-x2 {opacity: 0.8;}
+.E .y1-x3, .E .y6-x3 {opacity: 0.8;}
+.E .y1-x4, .E .y6-x4 {opacity: 0.6;}
+
+.E .y2-x1, .E .y5-x1 {opacity: 0.9;}
+.E .y2-x2, .E .y5-x2 {opacity: 0.2;}
+.E .y2-x3, .E .y5-x3 {opacity: 0.1;}
+.E .y2-x4, .E .y5-x4 {opacity: 0.1;}
+
+.E .y3-x1 {opacity: 0.8;}
+.E .y3-x2 {opacity: 0.6;}
+.E .y3-x3 {opacity: 0.6;}
+.E .y3-x4 {opacity: 0.0;}
+
+.E .y4-x1 {opacity: 0.8;}
+.E .y4-x2 {opacity: 0.3;}
+.E .y4-x3 {opacity: 0.3;}
+.E .y4-x4 {opacity: 0.0;}
+
+
+
+/*
+==============================
+LETTER F
+==============================
+*/
+
+.F .y1-x1 {opacity: 0.4;}
+.F .y1-x2 {opacity: 0.8;}
+.F .y1-x3 {opacity: 0.8;}
+.F .y1-x4 {opacity: 0.6;}
+/*.E .y1-x5, .y6-x5 {opacity: 0.2;}*/
+/*.E .y1-x6, .y6-x6 {opacity: 0.0;}*/
+
+.F .y2-x1 {opacity: 0.9;}
+.F .y2-x2 {opacity: 0.2;}
+.F .y2-x3 {opacity: 0.1;}
+.F .y2-x4 {opacity: 0.0;}
+/*.E .y2-x5, .y5-x5 {opacity: 0.9;}*/
+/*.E .y2-x6, .y5-x6 {opacity: 0.2;}*/
+
+.F .y3-x1 {opacity: 0.8;}
+.F .y3-x2 {opacity: 0.7;}
+.F .y3-x3 {opacity: 0.6;}
+.F .y3-x4 {opacity: 0.2;}
+/*.E .y3-x5 {opacity: 0.0;}*/
+/*.E .y3-x6 {opacity: 0.0;}*/
+
+.F .y4-x1 {opacity: 0.8;}
+.F .y4-x2 {opacity: 0.4;}
+.F .y4-x3 {opacity: 0.3;}
+.F .y4-x4 {opacity: 0.1;}
+/*.E .y4-x5 {opacity: 0.7;}*/
+/*.E .y4-x6 {opacity: 0.2;}*/
+
+.F .y5-x1 {opacity: 0.9;}
+.F .y5-x2 {opacity: 0.3;}
+.F .y5-x3 {opacity: 0.0;}
+.F .y5-x4 {opacity: 0.0;}
+
+.F .y6-x1 {opacity: 0.7;}
+.F .y6-x2 {opacity: 0.2;}
+.F .y6-x3 {opacity: 0.0;}
+.F .y6-x4 {opacity: 0.0;}
+
+
+
+/*
+==============================
+LETTER G
+==============================
+*/
+
+.G .y1-x1 {opacity: 0.0;}
+.G .y1-x2 {opacity: 0.4;}
+.G .y1-x3 {opacity: 0.6;}
+.G .y1-x4 {opacity: 0.5;}
+.G .y1-x5 {opacity: 0.2;}
+.G .y1-x6 {opacity: 0.0;}
+
+.G .y2-x1 {opacity: 0.4;}
+.G .y2-x2 {opacity: 0.9;}
+.G .y2-x3 {opacity: 0.2;}
+.G .y2-x4 {opacity: 0.4;}
+.G .y2-x5 {opacity: 0.9;}
+.G .y2-x6 {opacity: 0.3;}
+
+.G .y3-x1 {opacity: 0.8;}
+.G .y3-x2 {opacity: 0.3;}
+.G .y3-x3 {opacity: 0.0;}
+.G .y3-x4 {opacity: 0.0;}
+.G .y3-x5 {opacity: 0.0;}
+.G .y3-x6 {opacity: 0.0;}
+
+.G .y4-x1 {opacity: 0.8;}
+.G .y4-x2 {opacity: 0.3;}
+.G .y4-x3 {opacity: 0.0;}
+.G .y4-x4 {opacity: 0.0;}
+.G .y4-x5 {opacity: 0.7;}
+.G .y4-x6 {opacity: 0.7;}
+
+.G .y5-x1 {opacity: 0.4;}
+.G .y5-x2 {opacity: 0.9;}
+.G .y5-x3 {opacity: 0.2;}
+.G .y5-x4 {opacity: 0.4;}
+.G .y5-x5 {opacity: 0.4;}
+.G .y5-x6 {opacity: 0.8;}
+
+.G .y6-x1 {opacity: 0.0;}
+.G .y6-x2 {opacity: 0.4;}
+.G .y6-x3 {opacity: 0.6;}
+.G .y6-x4 {opacity: 0.7;}
+.G .y6-x5 {opacity: 0.2;}
+.G .y6-x6 {opacity: 0.7;}
+
+/*
+==============================
+LETTER H
+==============================
+*/
+
+.H .y1-x1, .H .y6-x1 {opacity: 0.6;}
+.H .y1-x2, .H .y6-x2 {opacity: 0.2;}
+.H .y1-x3, .H .y6-x3 {opacity: 0.0;}
+.H .y1-x4, .H .y6-x4 {opacity: 0.2;}
+.H .y1-x5, .H .y6-x5 {opacity: 0.6;}
+
+
+.H .y2-x1, .H .y5-x1 {opacity: 0.9;}
+.H .y2-x2, .H .y5-x2 {opacity: 0.3;}
+.H .y2-x3, .H .y5-x3 {opacity: 0.0;}
+.H .y2-x4, .H .y5-x4 {opacity: 0.3;}
+.H .y2-x5, .H .y5-x5 {opacity: 0.9;}
+
+
+.H .y3-x1, .H .y4-x1 {opacity: 0.7;}
+.H .y3-x2, .H .y4-x2 {opacity: 0.8;}
+.H .y3-x3, .H .y4-x3 {opacity: 0.5;}
+.H .y3-x4, .H .y4-x4 {opacity: 0.8;}
+.H .y3-x5, .H .y4-x5 {opacity: 0.7;}
+
+
+
+/*
+==============================
+LETTER I
+==============================
+*/
+
+.I .y1-x1, .I .y6-x1 {opacity: 0.6;}
+.I .y1-x2, .I .y6-x2 {opacity: 0.3;}
+/*.E .y1-x3, .E .y6-x3 {opacity: 0.8;}*/
+/*.E .y1-x4, .E .y6-x4 {opacity: 0.6;}*/
+/*.E .y1-x5, .y6-x5 {opacity: 0.2;}*/
+/*.E .y1-x6, .y6-x6 {opacity: 0.0;}*/
+
+.I .y2-x1, .I .y5-x1 {opacity: 0.8;}
+.I .y2-x2, .I .y5-x2 {opacity: 0.5;}
+/*.E .y2-x3, .E .y5-x3 {opacity: 0.1;}*/
+/*.E .y2-x4, .E .y5-x4 {opacity: 0.1;}*/
+/*.E .y2-x5, .y5-x5 {opacity: 0.9;}*/
+/*.E .y2-x6, .y5-x6 {opacity: 0.2;}*/
+
+.I .y3-x1, .I .y4-x1 {opacity: 0.8;}
+.I .y3-x2, .I .y4-x2 {opacity: 0.5;}
+/*.E .y3-x3 {opacity: 0.6;}*/
+/*.E .y3-x4 {opacity: 0.0;}*/
+/*.E .y3-x5 {opacity: 0.0;}*/
+/*.E .y3-x6 {opacity: 0.0;}*/
+
+
+/*
+==============================
+LETTER J
+==============================
+*/
+
+.J .y1-x1 {opacity: 0.0;}
+.J .y1-x2 {opacity: 0.0;}
+.J .y1-x3 {opacity: 0.0;}
+.J .y1-x4 {opacity: 0.2;}
+.J .y1-x5 {opacity: 0.5;}
+
+.J .y2-x1 {opacity: 0.0;}
+.J .y2-x2 {opacity: 0.0;}
+.J .y2-x3 {opacity: 0.0;}
+.J .y2-x4 {opacity: 0.4;}
+.J .y2-x5 {opacity: 0.7;}
+
+.J .y3-x1 {opacity: 0.0;}
+.J .y3-x2 {opacity: 0.0;}
+.J .y3-x3 {opacity: 0.0;}
+.J .y3-x4 {opacity: 0.4;}
+.J .y3-x5 {opacity: 0.7;}
+
+.J .y4-x1 {opacity: 0.7;}
+.J .y4-x2 {opacity: 0.4;}
+.J .y4-x3 {opacity: 0.0;}
+.J .y4-x4 {opacity: 0.4;}
+.J .y4-x5 {opacity: 0.7;}
+
+.J .y5-x1 {opacity: 0.5;}
+.J .y5-x2 {opacity: 0.7;}
+.J .y5-x3 {opacity: 0.1;}
+.J .y5-x4 {opacity: 0.7;}
+.J .y5-x5 {opacity: 0.5;}
+
+.J .y6-x1 {opacity: 0.0;}
+.J .y6-x2 {opacity: 0.4;}
+.J .y6-x3 {opacity: 0.8;}
+.J .y6-x4 {opacity: 0.4;}
+.J .y6-x5 {opacity: 0.0;}
+
+/*
+==============================
+LETTER K
+==============================
+*/
+
+.K .y1-x1 {opacity: 0.5;}
+.K .y1-x2 {opacity: 0.1;}
+.K .y1-x3 {opacity: 0.0;}
+.K .y1-x4 {opacity: 0.5;}
+.K .y1-x5 {opacity: 0.3;}
+
+.K .y2-x1 {opacity: 0.8;}
+.K .y2-x2 {opacity: 0.2;}
+.K .y2-x3 {opacity: 0.4;}
+.K .y2-x4 {opacity: 0.9;}
+.K .y2-x5 {opacity: 0.1;}
+
+.K .y3-x1 {opacity: 0.8;}
+.K .y3-x2 {opacity: 0.6;}
+.K .y3-x3 {opacity: 0.5;}
+.K .y3-x4 {opacity: 0.0;}
+.K .y3-x5 {opacity: 0.0;}
+
+.K .y4-x1 {opacity: 0.8;}
+.K .y4-x2 {opacity: 0.8;}
+.K .y4-x3 {opacity: 0.7;}
+.K .y4-x4 {opacity: 0.3;}
+.K .y4-x5 {opacity: 0.0;}
+
+.K .y5-x1 {opacity: 0.8;}
+.K .y5-x2 {opacity: 0.4;}
+.K .y5-x3 {opacity: 0.1;}
+.K .y5-x4 {opacity: 0.9;}
+.K .y5-x5 {opacity: 0.1;}
+
+.K .y6-x1 {opacity: 0.5;}
+.K .y6-x2 {opacity: 0.3;}
+.K .y6-x3 {opacity: 0.0;}
+.K .y6-x4 {opacity: 0.6;}
+.K .y6-x5 {opacity: 0.3;}
+
+
+/*
+==============================
+LETTER L
+==============================
+*/
+
+.L .y1-x1 {opacity: 0.1;}
+.L .y1-x2 {opacity: 0.7;}
+.L .y1-x3 {opacity: 0.1;}
+.L .y1-x4 {opacity: 0.0;}
+.L .y1-x5 {opacity: 0.0;}
+
+.L .y2-x1 {opacity: 0.2;}
+.L .y2-x2 {opacity: 0.9;}
+.L .y2-x3 {opacity: 0.1;}
+.L .y2-x4 {opacity: 0.0;}
+.L .y2-x5 {opacity: 0.0;}
+
+.L .y3-x1 {opacity: 0.3;}
+.L .y3-x2 {opacity: 0.7;}
+.L .y3-x3 {opacity: 0.1;}
+.L .y3-x4 {opacity: 0.0;}
+.L .y3-x5 {opacity: 0.0;}
+
+.L .y4-x1 {opacity: 0.4;}
+.L .y4-x2 {opacity: 0.6;}
+.L .y4-x3 {opacity: 0.0;}
+.L .y4-x4 {opacity: 0.0;}
+.L .y4-x5 {opacity: 0.0;}
+
+.L .y5-x1 {opacity: 0.4;}
+.L .y5-x2 {opacity: 0.8;}
+.L .y5-x3 {opacity: 0.3;}
+.L .y5-x4 {opacity: 0.2;}
+.L .y5-x5 {opacity: 0.1;}
+
+.L .y6-x1 {opacity: 0.2;}
+.L .y6-x2 {opacity: 0.7;}
+.L .y6-x3 {opacity: 0.7;}
+.L .y6-x4 {opacity: 0.7;}
+.L .y6-x5 {opacity: 0.3;}
+
+
+/*
+==============================
+LETTER M
+==============================
+*/
+
+.M .y1-x1 {opacity: 0.2;}
+.M .y1-x2 {opacity: 0.7;}
+.M .y1-x3 {opacity: 0.2;}
+.M .y1-x4 {opacity: 0;}
+.M .y1-x5 {opacity: 0.2;}
+.M .y1-x6 {opacity: 0.7;}
+.M .y1-x7 {opacity: 0.2;}
+
+.M .y2-x1 {opacity: 0.3;}
+.M .y2-x2 {opacity: 1.0;}
+.M .y2-x3 {opacity: 0.5;}
+.M .y2-x4 {opacity: 0.0;}
+.M .y2-x5 {opacity: 0.5;}
+.M .y2-x6 {opacity: 1.0;}
+.M .y2-x7 {opacity: 0.4;}
+
+.M .y3-x1 {opacity: 0.4;}
+.M .y3-x2 {opacity: 0.8;}
+.M .y3-x3 {opacity: 0.6;}
+.M .y3-x4 {opacity: 0.2;}
+.M .y3-x5 {opacity: 0.6;}
+.M .y3-x6 {opacity: 0.8;}
+.M .y3-x7 {opacity: 0.3;}
+
+.M .y4-x1 {opacity: 0.5;}
+.M .y4-x2 {opacity: 0.6;}
+.M .y4-x3 {opacity: 0.5;}
+.M .y4-x4 {opacity: 0.9;}
+.M .y4-x5 {opacity: 0.5;}
+.M .y4-x6 {opacity: 0.6;}
+.M .y4-x7 {opacity: 0.5;}
+
+.M .y5-x1 {opacity: 0.6;}
+.M .y5-x2 {opacity: 0.8;}
+.M .y5-x3 {opacity: 0.2;}
+.M .y5-x4 {opacity: 0.9;}
+.M .y5-x5 {opacity: 0.2;}
+.M .y5-x6 {opacity: 0.8;}
+.M .y5-x7 {opacity: 0.6;}
+
+.M .y6-x1 {opacity: 0.3;}
+.M .y6-x2 {opacity: 0.7;}
+.M .y6-x3 {opacity: 0.0;}
+.M .y6-x4 {opacity: 0.7;}
+.M .y6-x5 {opacity: 0.0;}
+.M .y6-x6 {opacity: 0.5;}
+.M .y6-x7 {opacity: 0.3;}
+
+/*
+==============================
+LETTER N
+==============================
+*/
+
+.N .y1-x1 {opacity: 0.6;}
+.N .y1-x2 {opacity: 0.2;}
+.N .y1-x3 {opacity: 0.0;}
+.N .y1-x4 {opacity: 0.1;}
+.N .y1-x5 {opacity: 0.5;}
+
+.N .y2-x1 {opacity: 0.7;}
+.N .y2-x2 {opacity: 0.9;}
+.N .y2-x3 {opacity: 0.0;}
+.N .y2-x4 {opacity: 0.2;}
+.N .y2-x5 {opacity: 0.6;}
+
+.N .y3-x1 {opacity: 0.6;}
+.N .y3-x2 {opacity: 0.8;}
+.N .y3-x3 {opacity: 0.5;}
+.N .y3-x4 {opacity: 0.2;}
+.N .y3-x5 {opacity: 0.6;}
+
+.N .y4-x1 {opacity: 0.7;}
+.N .y4-x2 {opacity: 0.2;}
+.N .y4-x3 {opacity: 0.6;}
+.N .y4-x4 {opacity: 0.8;}
+.N .y4-x5 {opacity: 0.4;}
+
+.N .y5-x1 {opacity: 0.8;}
+.N .y5-x2 {opacity: 0.2;}
+.N .y5-x3 {opacity: 0.1;}
+.N .y5-x4 {opacity: 0.9;}
+.N .y5-x5 {opacity: 0.5;}
+
+.N .y6-x1 {opacity: 0.7;}
+.N .y6-x2 {opacity: 0.1;}
+.N .y6-x3 {opacity: 0.0;}
+.N .y6-x4 {opacity: 0.4;}
+.N .y6-x5 {opacity: 0.6;}
+
+
+/*
+==============================
+LETTER O
+==============================
+*/
+
+.O .y1-x1 {opacity: 0.0;}
+.O .y1-x2 {opacity: 0.4;}
+.O .y1-x3 {opacity: 0.6;}
+.O .y1-x4 {opacity: 0.5;}
+.O .y1-x5 {opacity: 0.2;}
+.O .y1-x6 {opacity: 0.0;}
+
+.O .y2-x1 {opacity: 0.4;}
+.O .y2-x2 {opacity: 0.9;}
+.O .y2-x3 {opacity: 0.2;}
+.O .y2-x4 {opacity: 0.4;}
+.O .y2-x5 {opacity: 0.8;}
+.O .y2-x6 {opacity: 0.2;}
+
+.O .y3-x1 {opacity: 0.8;}
+.O .y3-x2 {opacity: 0.3;}
+.O .y3-x3 {opacity: 0.0;}
+.O .y3-x4 {opacity: 0.0;}
+.O .y3-x5 {opacity: 0.7;}
+.O .y3-x6 {opacity: 0.5;}
+
+.O .y4-x1 {opacity: 0.8;}
+.O .y4-x2 {opacity: 0.3;}
+.O .y4-x3 {opacity: 0.0;}
+.O .y4-x4 {opacity: 0.0;}
+.O .y4-x5 {opacity: 0.7;}
+.O .y4-x6 {opacity: 0.5;}
+
+.O .y5-x1 {opacity: 0.4;}
+.O .y5-x2 {opacity: 0.9;}
+.O .y5-x3 {opacity: 0.2;}
+.O .y5-x4 {opacity: 0.4;}
+.O .y5-x5 {opacity: 0.8;}
+.O .y5-x6 {opacity: 0.2;}
+
+.O .y6-x1 {opacity: 0.0;}
+.O .y6-x2 {opacity: 0.4;}
+.O .y6-x3 {opacity: 0.6;}
+.O .y6-x4 {opacity: 0.5;}
+.O .y6-x5 {opacity: 0.2;}
+.O .y6-x6 {opacity: 0.0;}
+
+/*
+==============================
+LETTER P
+==============================
+*/
+
+.P .y1-x1 {opacity: 0.3;}
+.P .y1-x2 {opacity: 0.7;}
+.P .y1-x3 {opacity: 0.8;}
+.P .y1-x4 {opacity: 0.3;}
+.P .y1-x5 {opacity: 0.0;}
+
+.P .y2-x1 {opacity: 0.8;}
+.P .y2-x2 {opacity: 0.5;}
+.P .y2-x3 {opacity: 0.0;}
+.P .y2-x4 {opacity: 0.9;}
+.P .y2-x5 {opacity: 0.3;}
+
+.P .y3-x1 {opacity: 0.8;}
+.P .y3-x2 {opacity: 0.6;}
+.P .y3-x3 {opacity: 0.2;}
+.P .y3-x4 {opacity: 0.6;}
+.P .y3-x5 {opacity: 0.4;}
+
+.P .y4-x1 {opacity: 0.8;}
+.P .y4-x2 {opacity: 0.9;}
+.P .y4-x3 {opacity: 0.7;}
+.P .y4-x4 {opacity: 0.5;}
+.P .y4-x5 {opacity: 0.0;}
+
+.P .y5-x1 {opacity: 0.8;}
+.P .y5-x2 {opacity: 0.4;}
+.P .y5-x3 {opacity: 0.0;}
+.P .y5-x4 {opacity: 0.0;}
+.P .y5-x5 {opacity: 0.0;}
+
+.P .y6-x1 {opacity: 0.5;}
+.P .y6-x2 {opacity: 0.3;}
+.P .y6-x3 {opacity: 0.0;}
+.P .y6-x4 {opacity: 0.0;}
+.P .y6-x5 {opacity: 0.0;}
+
+/*
+==============================
+LETTER Q
+==============================
+*/
+
+.Q .y1-x1 {opacity: 0.0;}
+.Q .y1-x2 {opacity: 0.4;}
+.Q .y1-x3 {opacity: 0.6;}
+.Q .y1-x4 {opacity: 0.5;}
+.Q .y1-x5 {opacity: 0.2;}
+.Q .y1-x6 {opacity: 0.0;}
+
+.Q .y2-x1 {opacity: 0.4;}
+.Q .y2-x2 {opacity: 0.9;}
+.Q .y2-x3 {opacity: 0.2;}
+.Q .y2-x4 {opacity: 0.4;}
+.Q .y2-x5 {opacity: 0.8;}
+.Q .y2-x6 {opacity: 0.2;}
+
+.Q .y3-x1 {opacity: 0.8;}
+.Q .y3-x2 {opacity: 0.3;}
+.Q .y3-x3 {opacity: 0.0;}
+.Q .y3-x4 {opacity: 0.0;}
+.Q .y3-x5 {opacity: 0.7;}
+.Q .y3-x6 {opacity: 0.5;}
+
+.Q .y4-x1 {opacity: 0.8;}
+.Q .y4-x2 {opacity: 0.3;}
+.Q .y4-x3 {opacity: 0.0;}
+.Q .y4-x4 {opacity: 0.0;}
+.Q .y4-x5 {opacity: 0.7;}
+.Q .y4-x6 {opacity: 0.5;}
+
+.Q .y5-x1 {opacity: 0.4;}
+.Q .y5-x2 {opacity: 0.9;}
+.Q .y5-x3 {opacity: 0.2;}
+.Q .y5-x4 {opacity: 0.4;}
+.Q .y5-x5 {opacity: 0.8;}
+.Q .y5-x6 {opacity: 0.2;}
+
+.Q .y6-x1 {opacity: 0.0;}
+.Q .y6-x2 {opacity: 0.4;}
+.Q .y6-x3 {opacity: 0.6;}
+.Q .y6-x4 {opacity: 0.7;}
+.Q .y6-x5 {opacity: 0.6;}
+.Q .y6-x6 {opacity: 0.5;}
+.Q .y6-x7 {opacity: 0.2;}
+
+.Q .y7-x6 {opacity: 0.4;}
+.Q .y7-x7 {opacity: 0.1;}
+
+/*
+==============================
+LETTER R
+==============================
+*/
+
+.R .y1-x1 {opacity: 0.3;}
+.R .y1-x2 {opacity: 0.7;}
+.R .y1-x3 {opacity: 0.8;}
+.R .y1-x4 {opacity: 0.3;}
+.R .y1-x5 {opacity: 0.0;}
+/*.R .y1-x6 {opacity: 0.0;}*/
+
+.R .y2-x1 {opacity: 0.8;}
+.R .y2-x2 {opacity: 0.5;}
+.R .y2-x3 {opacity: 0.0;}
+.R .y2-x4 {opacity: 0.9;}
+.R .y2-x5 {opacity: 0.3;}
+/*.R .y2-x6 {opacity: 0.1;}*/
+
+.R .y3-x1 {opacity: 0.8;}
+.R .y3-x2 {opacity: 0.6;}
+.R .y3-x3 {opacity: 0.2;}
+.R .y3-x4 {opacity: 0.6;}
+.R .y3-x5 {opacity: 0.4;}
+/*.R .y3-x6 {opacity: 0.0;}*/
+
+.R .y4-x1 {opacity: 0.8;}
+.R .y4-x2 {opacity: 0.8;}
+.R .y4-x3 {opacity: 0.8;}
+.R .y4-x4 {opacity: 0.6;}
+.R .y4-x5 {opacity: 0.0;}
+/*.R .y4-x6 {opacity: 0.3;}*/
+
+.R .y5-x1 {opacity: 0.8;}
+.R .y5-x2 {opacity: 0.4;}
+.R .y5-x3 {opacity: 0.0;}
+.R .y5-x4 {opacity: 0.9;}
+.R .y5-x5 {opacity: 0.2;}
+/*.R .y5-x6 {opacity: 0.1;}*/
+
+.R .y6-x1 {opacity: 0.5;}
+.R .y6-x2 {opacity: 0.3;}
+.R .y6-x3 {opacity: 0.0;}
+.R .y6-x4 {opacity: 0.7;}
+.R .y6-x5 {opacity: 0.3;}
+/*.R .y6-x6 {opacity: 0.0;}*/
+
+/*
+==============================
+LETTER S
+==============================
+*/
+
+.S .y1-x1 {opacity: 0.1;}
+.S .y1-x2 {opacity: 0.4;}
+.S .y1-x3 {opacity: 0.8;}
+.S .y1-x4 {opacity: 0.5;}
+.S .y1-x5 {opacity: 0.0;}
+
+.S .y2-x1 {opacity: 0.8;}
+.S .y2-x2 {opacity: 0.7;}
+.S .y2-x3 {opacity: 0.0;}
+.S .y2-x4 {opacity: 0.4;}
+.S .y2-x5 {opacity: 0.2;}
+
+.S .y3-x1 {opacity: 0.4;}
+.S .y3-x2 {opacity: 0.9;}
+.S .y3-x3 {opacity: 0.7;}
+.S .y3-x4 {opacity: 0.2;}
+.S .y3-x5 {opacity: 0.0;}
+
+.S .y4-x1 {opacity: 0.1;}
+.S .y4-x2 {opacity: 0.2;}
+.S .y4-x3 {opacity: 0.7;}
+.S .y4-x4 {opacity: 0.9;}
+.S .y4-x5 {opacity: 0.3;}
+
+.S .y5-x1 {opacity: 0.6;}
+.S .y5-x2 {opacity: 0.3;}
+.S .y5-x3 {opacity: 0.0;}
+.S .y5-x4 {opacity: 0.8;}
+.S .y5-x5 {opacity: 0.6;}
+
+.S .y6-x1 {opacity: 0.0;}
+.S .y6-x2 {opacity: 0.5;}
+.S .y6-x3 {opacity: 0.7;}
+.S .y6-x4 {opacity: 0.5;}
+.S .y6-x5 {opacity: 0.1;}
+
+/*
+==============================
+LETTER T
+==============================
+*/
+
+.T .y1-x1 {opacity: 0.4;}
+.T .y1-x2 {opacity: 0.7;}
+.T .y1-x3 {opacity: 0.6;}
+.T .y1-x4 {opacity: 0.7;}
+.T .y1-x5 {opacity: 0.4;}
+
+.T .y2-x1 {opacity: 0.2;}
+.T .y2-x2 {opacity: 0.4;}
+.T .y2-x3 {opacity: 0.9;}
+.T .y2-x4 {opacity: 0.5;}
+.T .y2-x5 {opacity: 0.2;}
+
+.T .y3-x1 {opacity: 0.0;}
+.T .y3-x2 {opacity: 0.1;}
+.T .y3-x3 {opacity: 0.7;}
+.T .y3-x4 {opacity: 0.2;}
+.T .y3-x5 {opacity: 0.0;}
+
+.T .y4-x1 {opacity: 0.0;}
+.T .y4-x2 {opacity: 0.1;}
+.T .y4-x3 {opacity: 0.7;}
+.T .y4-x4 {opacity: 0.2;}
+.T .y4-x5 {opacity: 0.0;}
+
+.T .y5-x1 {opacity: 0.0;}
+.T .y5-x2 {opacity: 0.1;}
+.T .y5-x3 {opacity: 0.7;}
+.T .y5-x4 {opacity: 0.2;}
+.T .y5-x5 {opacity: 0.0;}
+
+.T .y6-x1 {opacity: 0.0;}
+.T .y6-x2 {opacity: 0.0;}
+.T .y6-x3 {opacity: 0.5;}
+.T .y6-x4 {opacity: 0.1;}
+.T .y6-x5 {opacity: 0.0;}
+
+/*
+==============================
+LETTER U
+==============================
+*/
+
+.U .y1-x1 {opacity: 0.5;}
+.U .y1-x2 {opacity: 0.2;}
+.U .y1-x3 {opacity: 0.0;}
+.U .y1-x4 {opacity: 0.2;}
+.U .y1-x5 {opacity: 0.5;}
+
+.U .y2-x1 {opacity: 0.7;}
+.U .y2-x2 {opacity: 0.4;}
+.U .y2-x3 {opacity: 0.0;}
+.U .y2-x4 {opacity: 0.4;}
+.U .y2-x5 {opacity: 0.7;}
+
+.U .y3-x1 {opacity: 0.7;}
+.U .y3-x2 {opacity: 0.4;}
+.U .y3-x3 {opacity: 0.0;}
+.U .y3-x4 {opacity: 0.4;}
+.U .y3-x5 {opacity: 0.7;}
+
+.U .y4-x1 {opacity: 0.7;}
+.U .y4-x2 {opacity: 0.4;}
+.U .y4-x3 {opacity: 0.0;}
+.U .y4-x4 {opacity: 0.4;}
+.U .y4-x5 {opacity: 0.7;}
+
+.U .y5-x1 {opacity: 0.5;}
+.U .y5-x2 {opacity: 0.7;}
+.U .y5-x3 {opacity: 0.1;}
+.U .y5-x4 {opacity: 0.7;}
+.U .y5-x5 {opacity: 0.5;}
+
+.U .y6-x1 {opacity: 0.0;}
+.U .y6-x2 {opacity: 0.4;}
+.U .y6-x3 {opacity: 0.8;}
+.U .y6-x4 {opacity: 0.4;}
+.U .y6-x5 {opacity: 0.0;}
+
+/*
+==============================
+LETTER V
+==============================
+*/
+
+.V .y1-x1 {opacity: 0.7;}
+.V .y1-x2 {opacity: 0.1;}
+.V .y1-x3 {opacity: 0.0;}
+.V .y1-x4 {opacity: 0.1;}
+.V .y1-x5 {opacity: 0.7;}
+
+.V .y2-x1 {opacity: 0.9;}
+.V .y2-x2 {opacity: 0.6;}
+.V .y2-x3 {opacity: 0.0;}
+.V .y2-x4 {opacity: 0.6;}
+.V .y2-x5 {opacity: 0.8;}
+
+.V .y3-x1 {opacity: 0.2;}
+.V .y3-x2 {opacity: 0.7;}
+.V .y3-x3 {opacity: 0.0;}
+.V .y3-x4 {opacity: 0.7;}
+.V .y3-x5 {opacity: 0.2;}
+
+.V .y4-x1 {opacity: 0.0;}
+.V .y4-x2 {opacity: 0.7;}
+.V .y4-x3 {opacity: 0.5;}
+.V .y4-x4 {opacity: 0.7;}
+.V .y4-x5 {opacity: 0.0;}
+
+.V .y5-x1 {opacity: 0.0;}
+.V .y5-x2 {opacity: 0.3;}
+.V .y5-x3 {opacity: 0.9;}
+.V .y5-x4 {opacity: 0.3;}
+.V .y5-x5 {opacity: 0.0;}
+
+.V .y6-x1 {opacity: 0.0;}
+.V .y6-x2 {opacity: 0.1;}
+.V .y6-x3 {opacity: 0.6;}
+.V .y6-x4 {opacity: 0.1;}
+.V .y6-x5 {opacity: 0.0;}
+
+/*
+==============================
+LETTER W
+==============================
+*/
+
+.W .y1-x1 {opacity: 0.4;}
+.W .y1-x2 {opacity: 0.0;}
+.W .y1-x3 {opacity: 0.2;}
+.W .y1-x4 {opacity: 0.5;}
+.W .y1-x5 {opacity: 0.0;}
+.W .y1-x6 {opacity: 0.2;}
+.W .y1-x7 {opacity: 0.5;}
+
+.W .y2-x1 {opacity: 0.7;}
+.W .y2-x2 {opacity: 0.1;}
+.W .y2-x3 {opacity: 0.4;}
+.W .y2-x4 {opacity: 0.9;}
+.W .y2-x5 {opacity: 0.0;}
+.W .y2-x6 {opacity: 0.5;}
+.W .y2-x7 {opacity: 0.7;}
+
+.W .y3-x1 {opacity: 0.5;}
+.W .y3-x2 {opacity: 0.4;}
+.W .y3-x3 {opacity: 0.3;}
+.W .y3-x4 {opacity: 0.8;}
+.W .y3-x5 {opacity: 0.3;}
+.W .y3-x6 {opacity: 0.4;}
+.W .y3-x7 {opacity: 0.3;}
+
+.W .y4-x1 {opacity: 0.2;}
+.W .y4-x2 {opacity: 0.7;}
+.W .y4-x3 {opacity: 0.3;}
+.W .y4-x4 {opacity: 0.2;}
+.W .y4-x5 {opacity: 0.8;}
+.W .y4-x6 {opacity: 0.6;}
+.W .y4-x7 {opacity: 0.0;}
+
+.W .y5-x1 {opacity: 0.0;}
+.W .y5-x2 {opacity: 0.9;}
+.W .y5-x3 {opacity: 0.6;}
+.W .y5-x4 {opacity: 0.0;}
+.W .y5-x5 {opacity: 0.9;}
+.W .y5-x6 {opacity: 0.6;}
+.W .y5-x7 {opacity: 0.0;}
+
+.W .y6-x1 {opacity: 0.0;}
+.W .y6-x2 {opacity: 0.5;}
+.W .y6-x3 {opacity: 0.3;}
+.W .y6-x4 {opacity: 0.0;}
+.W .y6-x5 {opacity: 0.5;}
+.W .y6-x6 {opacity: 0.3;}
+.W .y6-x7 {opacity: 0.0;}
+
+/*
+==============================
+LETTER X
+==============================
+*/
+
+.X .y1-x1 {opacity: 0.7;}
+.X .y1-x2 {opacity: 0.2;}
+.X .y1-x3 {opacity: 0.0;}
+.X .y1-x4 {opacity: 0.1;}
+.X .y1-x5 {opacity: 0.6;}
+
+.X .y2-x1 {opacity: 0.3;}
+.X .y2-x2 {opacity: 0.7;}
+.X .y2-x3 {opacity: 0.3;}
+.X .y2-x4 {opacity: 0.5;}
+.X .y2-x5 {opacity: 0.3;}
+
+.X .y3-x1 {opacity: 0.0;}
+.X .y3-x2 {opacity: 0.1;}
+.X .y3-x3 {opacity: 0.9;}
+.X .y3-x4 {opacity: 0.2;}
+.X .y3-x5 {opacity: 0.0;}
+
+.X .y4-x1 {opacity: 0.0;}
+.X .y4-x2 {opacity: 0.2;}
+.X .y4-x3 {opacity: 0.8;}
+.X .y4-x4 {opacity: 0.3;}
+.X .y4-x5 {opacity: 0.0;}
+
+.X .y5-x1 {opacity: 0.2;}
+.X .y5-x2 {opacity: 0.8;}
+.X .y5-x3 {opacity: 0.1;}
+.X .y5-x4 {opacity: 0.6;}
+.X .y5-x5 {opacity: 0.4;}
+
+.X .y6-x1 {opacity: 0.5;}
+.X .y6-x2 {opacity: 0.3;}
+.X .y6-x3 {opacity: 0.0;}
+.X .y6-x4 {opacity: 0.1;}
+.X .y6-x5 {opacity: 0.6;}
+
+/*
+==============================
+LETTER Y
+==============================
+*/
+
+.Y .y1-x1 {opacity: 0.7;}
+.Y .y1-x2 {opacity: 0.3;}
+.Y .y1-x3 {opacity: 0.0;}
+.Y .y1-x4 {opacity: 0.2;}
+.Y .y1-x5 {opacity: 0.6;}
+
+.Y .y2-x1 {opacity: 0.4;}
+.Y .y2-x2 {opacity: 0.7;}
+.Y .y2-x3 {opacity: 0.0;}
+.Y .y2-x4 {opacity: 0.7;}
+.Y .y2-x5 {opacity: 0.4;}
+
+.Y .y3-x1 {opacity: 0.0;}
+.Y .y3-x2 {opacity: 0.5;}
+.Y .y3-x3 {opacity: 0.9;}
+.Y .y3-x4 {opacity: 0.5;}
+.Y .y3-x5 {opacity: 0.0;}
+
+.Y .y4-x1 {opacity: 0.0;}
+.Y .y4-x2 {opacity: 0.2;}
+.Y .y4-x3 {opacity: 0.8;}
+.Y .y4-x4 {opacity: 0.2;}
+.Y .y4-x5 {opacity: 0.0;}
+
+.Y .y5-x1 {opacity: 0.0;}
+.Y .y5-x2 {opacity: 0.1;}
+.Y .y5-x3 {opacity: 0.7;}
+.Y .y5-x4 {opacity: 0.1;}
+.Y .y5-x5 {opacity: 0.0;}
+
+.Y .y6-x1 {opacity: 0.0;}
+.Y .y6-x2 {opacity: 0.1;}
+.Y .y6-x3 {opacity: 0.6;}
+.Y .y6-x4 {opacity: 0.1;}
+.Y .y6-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+LETTER Z
+==============================
+*/
+
+.Z .y1-x1 {opacity: 0.5;}
+.Z .y1-x2 {opacity: 0.7;}
+.Z .y1-x3 {opacity: 0.8;}
+.Z .y1-x4 {opacity: 0.7;}
+.Z .y1-x5 {opacity: 0.3;}
+
+.Z .y2-x1 {opacity: 0.1;}
+.Z .y2-x2 {opacity: 0.1;}
+.Z .y2-x3 {opacity: 0.2;}
+.Z .y2-x4 {opacity: 0.9;}
+.Z .y2-x5 {opacity: 0.2;}
+
+.Z .y3-x1 {opacity: 0.0;}
+.Z .y3-x2 {opacity: 0.1;}
+.Z .y3-x3 {opacity: 0.9;}
+.Z .y3-x4 {opacity: 0.3;}
+.Z .y3-x5 {opacity: 0.0;}
+
+.Z .y4-x1 {opacity: 0.0;}
+.Z .y4-x2 {opacity: 0.8;}
+.Z .y4-x3 {opacity: 0.6;}
+.Z .y4-x4 {opacity: 0.0;}
+.Z .y4-x5 {opacity: 0.0;}
+
+.Z .y5-x1 {opacity: 0.6;}
+.Z .y5-x2 {opacity: 0.9;}
+.Z .y5-x3 {opacity: 0.2;}
+.Z .y5-x4 {opacity: 0.1;}
+.Z .y5-x5 {opacity: 0.2;}
+
+.Z .y6-x1 {opacity: 0.5;}
+.Z .y6-x2 {opacity: 0.7;}
+.Z .y6-x3 {opacity: 0.6;}
+.Z .y6-x4 {opacity: 0.7;}
+.Z .y6-x5 {opacity: 0.2;}
+
+
+/*
+============================================
+============================================
+============================================
+NUMBERS
+============================================
+============================================
+============================================
+*/
+
+
+
+/*
+==============================
+ZERO
+==============================
+*/
+
+.Zero .y1-x1 {opacity: 0.1;}
+.Zero .y1-x2 {opacity: 0.8;}
+.Zero .y1-x3 {opacity: 0.9;}
+.Zero .y1-x4 {opacity: 0.1;}
+
+.Zero .y2-x1 {opacity: 0.6;}
+.Zero .y2-x2 {opacity: 0.4;}
+.Zero .y2-x3 {opacity: 0.4;}
+.Zero .y2-x4 {opacity: 0.6;}
+
+.Zero .y3-x1 {opacity: 0.9;}
+.Zero .y3-x2 {opacity: 0.1;}
+.Zero .y3-x3 {opacity: 0.1;}
+.Zero .y3-x4 {opacity: 0.9;}
+
+.Zero .y4-x1 {opacity: 0.9;}
+.Zero .y4-x2 {opacity: 0.2;}
+.Zero .y4-x3 {opacity: 0.1;}
+.Zero .y4-x4 {opacity: 0.9;}
+
+.Zero .y5-x1 {opacity: 0.6;}
+.Zero .y5-x2 {opacity: 0.4;}
+.Zero .y5-x3 {opacity: 0.4;}
+.Zero .y5-x4 {opacity: 0.6;}
+
+.Zero .y6-x1 {opacity: 0.1;}
+.Zero .y6-x2 {opacity: 0.9;}
+.Zero .y6-x3 {opacity: 0.8;}
+.Zero .y6-x4 {opacity: 0.1;}
+
+/*
+==============================
+FOUR
+==============================
+*/
+
+.One .y1-x1 {opacity: 0.0;}
+.One .y1-x2 {opacity: 0.4;}
+.One .y1-x3 {opacity: 0.6;}
+
+.One .y2-x1 {opacity: 0.2;}
+.One .y2-x2 {opacity: 0.6;}
+.One .y2-x3 {opacity: 0.9;}
+
+.One .y3-x1 {opacity: 0.0;}
+.One .y3-x2 {opacity: 0.1;}
+.One .y3-x3 {opacity: 0.8;}
+
+.One .y4-x1 {opacity: 0.0;}
+.One .y4-x2 {opacity: 0.1;}
+.One .y4-x3 {opacity: 0.8;}
+
+.One .y5-x1 {opacity: 0.0;}
+.One .y5-x2 {opacity: 0.1;}
+.One .y5-x3 {opacity: 0.8;}
+
+.One .y6-x1 {opacity: 0.0;}
+.One .y6-x2 {opacity: 0.1;}
+.One .y6-x3 {opacity: 0.7;}
+
+/*
+==============================
+TWO
+==============================
+*/
+
+.Two .y1-x1 {opacity: 0.1;}
+.Two .y1-x2 {opacity: 0.8;}
+.Two .y1-x3 {opacity: 0.8;}
+.Two .y1-x4 {opacity: 0.2;}
+
+.Two .y2-x1 {opacity: 0.7;}
+.Two .y2-x2 {opacity: 0.1;}
+.Two .y2-x3 {opacity: 0.1;}
+.Two .y2-x4 {opacity: 0.8;}
+
+.Two .y3-x1 {opacity: 0.0;}
+.Two .y3-x2 {opacity: 0.0;}
+.Two .y3-x3 {opacity: 0.2;}
+.Two .y3-x4 {opacity: 0.4;}
+
+.Two .y4-x1 {opacity: 0.0;}
+.Two .y4-x2 {opacity: 0.1;}
+.Two .y4-x3 {opacity: 0.8;}
+.Two .y4-x4 {opacity: 0.2;}
+
+.Two .y5-x1 {opacity: 0.1;}
+.Two .y5-x2 {opacity: 0.7;}
+.Two .y5-x3 {opacity: 0.1;}
+.Two .y5-x4 {opacity: 0.0;}
+
+.Two .y6-x1 {opacity: 0.7;}
+.Two .y6-x2 {opacity: 0.8;}
+.Two .y6-x3 {opacity: 0.9;}
+.Two .y6-x4 {opacity: 0.6;}
+
+
+/*
+==============================
+THREE
+==============================
+*/
+
+.Three .y1-x1 {opacity: 0.1;}
+.Three .y1-x2 {opacity: 0.8;}
+.Three .y1-x3 {opacity: 0.8;}
+.Three .y1-x4 {opacity: 0.2;}
+
+.Three .y2-x1 {opacity: 0.7;}
+.Three .y2-x2 {opacity: 0.1;}
+.Three .y2-x3 {opacity: 0.2;}
+.Three .y2-x4 {opacity: 0.8;}
+
+.Three .y3-x1 {opacity: 0.1;}
+.Three .y3-x2 {opacity: 0.0;}
+.Three .y3-x3 {opacity: 0.1;}
+.Three .y3-x4 {opacity: 0.7;}
+
+.Three .y4-x1 {opacity: 0.0;}
+.Three .y4-x2 {opacity: 0.4;}
+.Three .y4-x3 {opacity: 0.8;}
+.Three .y4-x4 {opacity: 0.3;}
+
+.Three .y5-x1 {opacity: 0.7;}
+.Three .y5-x2 {opacity: 0.0;}
+.Three .y5-x3 {opacity: 0.2;}
+.Three .y5-x4 {opacity: 0.8;}
+
+.Three .y6-x1 {opacity: 0.2;}
+.Three .y6-x2 {opacity: 0.8;}
+.Three .y6-x3 {opacity: 0.9;}
+.Three .y6-x4 {opacity: 0.1;}
+
+/*
+==============================
+FOUR
+==============================
+*/
+
+.Four .y1-x1 {opacity: 0.0;}
+.Four .y1-x2 {opacity: 0.0;}
+.Four .y1-x3 {opacity: 0.1;}
+.Four .y1-x4 {opacity: 0.8;}
+.Four .y1-x5 {opacity: 0.1;}
+
+.Four .y2-x1 {opacity: 0.0;}
+.Four .y2-x2 {opacity: 0.0;}
+.Four .y2-x3 {opacity: 0.4;}
+.Four .y2-x4 {opacity: 0.7;}
+.Four .y2-x5 {opacity: 0.1;}
+
+.Four .y3-x1 {opacity: 0.0;}
+.Four .y3-x2 {opacity: 0.2;}
+.Four .y3-x3 {opacity: 0.4;}
+.Four .y3-x4 {opacity: 0.6;}
+.Four .y3-x5 {opacity: 0.1;}
+
+.Four .y4-x1 {opacity: 0.0;}
+.Four .y4-x2 {opacity: 0.6;}
+.Four .y4-x3 {opacity: 0.0;}
+.Four .y4-x4 {opacity: 0.6;}
+.Four .y4-x5 {opacity: 0.1;}
+
+.Four .y5-x1 {opacity: 0.4;}
+.Four .y5-x2 {opacity: 0.5;}
+.Four .y5-x3 {opacity: 0.8;}
+.Four .y5-x4 {opacity: 0.9;}
+.Four .y5-x5 {opacity: 0.6;}
+
+.Four .y6-x1 {opacity: 0.0;}
+.Four .y6-x2 {opacity: 0.0;}
+.Four .y6-x3 {opacity: 0.0;}
+.Four .y6-x4 {opacity: 0.7;}
+.Four .y6-x5 {opacity: 0.1;}
+
+
+/*
+==============================
+FIVE
+==============================
+*/
+
+.Five .y1-x1 {opacity: 0.7;}
+.Five .y1-x2 {opacity: 0.8;}
+.Five .y1-x3 {opacity: 0.9;}
+.Five .y1-x4 {opacity: 0.7;}
+.Five .y1-x5 {opacity: 0.1;}
+
+.Five .y2-x1 {opacity: 0.6;}
+.Five .y2-x2 {opacity: 0.1;}
+.Five .y2-x3 {opacity: 0.0;}
+.Five .y2-x4 {opacity: 0.0;}
+.Five .y2-x5 {opacity: 0.0;}
+
+.Five .y3-x1 {opacity: 0.6;}
+.Five .y3-x2 {opacity: 0.8;}
+.Five .y3-x3 {opacity: 0.8;}
+.Five .y3-x4 {opacity: 0.5}
+.Five .y3-x5 {opacity: 0.0;}
+
+.Five .y4-x1 {opacity: 0.3;}
+.Five .y4-x2 {opacity: 0.1;}
+.Five .y4-x3 {opacity: 0.1;}
+.Five .y4-x4 {opacity: 0.9;}
+.Five .y4-x5 {opacity: 0.1;}
+
+.Five .y5-x1 {opacity: 0.6;}
+.Five .y5-x2 {opacity: 0.2;}
+.Five .y5-x3 {opacity: 0.0;}
+.Five .y5-x4 {opacity: 0.9;}
+.Five .y5-x5 {opacity: 0.2;}
+
+.Five .y6-x1 {opacity: 0.2;}
+.Five .y6-x2 {opacity: 0.8;}
+.Five .y6-x3 {opacity: 0.9;}
+.Five .y6-x4 {opacity: 0.4;}
+.Five .y6-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+SIX
+==============================
+*/
+
+.Six .y6-x4 {opacity: 0.1;}
+.Six .y6-x3 {opacity: 0.8;}
+.Six .y6-x2 {opacity: 0.9;}
+.Six .y6-x1 {opacity: 0.2;}
+
+.Six .y5-x4 {opacity: 0.8;}
+.Six .y5-x3 {opacity: 0.1;}
+.Six .y5-x2 {opacity: 0.0;}
+.Six .y5-x1 {opacity: 0.9;}
+
+.Six .y4-x4 {opacity: 0.8;}
+.Six .y4-x3 {opacity: 0.1;}
+.Six .y4-x2 {opacity: 0.0;}
+.Six .y4-x1 {opacity: 0.8;}
+
+.Six .y3-x4 {opacity: 0.2;}
+.Six .y3-x3 {opacity: 0.8;}
+.Six .y3-x2 {opacity: 0.7;}
+.Six .y3-x1 {opacity: 0.7;}
+
+.Six .y2-x4 {opacity: 0.5;}
+.Six .y2-x3 {opacity: 0.0;}
+.Six .y2-x2 {opacity: 0.1;}
+.Six .y2-x1 {opacity: 0.8;}
+
+.Six .y1-x4 {opacity: 0.1;}
+.Six .y1-x3 {opacity: 0.8;}
+.Six .y1-x2 {opacity: 0.9;}
+.Six .y1-x1 {opacity: 0.1;}
+
+/*
+==============================
+SEVEN
+==============================
+*/
+
+.Seven .y1-x1 {opacity: 0.4;}
+.Seven .y1-x2 {opacity: 0.7;}
+.Seven .y1-x3 {opacity: 0.8;}
+.Seven .y1-x4 {opacity: 0.9;}
+.Seven .y1-x5 {opacity: 0.3;}
+
+.Seven .y2-x1 {opacity: 0.0;}
+.Seven .y2-x2 {opacity: 0.0;}
+.Seven .y2-x3 {opacity: 0.0;}
+.Seven .y2-x4 {opacity: 0.8;}
+.Seven .y2-x5 {opacity: 0.1;}
+
+.Seven .y3-x1 {opacity: 0.0;}
+.Seven .y3-x2 {opacity: 0.0;}
+.Seven .y3-x3 {opacity: 0.3;}
+.Seven .y3-x4 {opacity: 0.6;}
+.Seven .y3-x5 {opacity: 0.0;}
+
+.Seven .y4-x1 {opacity: 0.0;}
+.Seven .y4-x2 {opacity: 0.0;}
+.Seven .y4-x3 {opacity: 0.8;}
+.Seven .y4-x4 {opacity: 0.1;}
+.Seven .y4-x5 {opacity: 0.0;}
+
+.Seven .y5-x1 {opacity: 0.0;}
+.Seven .y5-x2 {opacity: 0.2;}
+.Seven .y5-x3 {opacity: 0.5;}
+.Seven .y5-x4 {opacity: 0.0;}
+.Seven .y5-x5 {opacity: 0.0;}
+
+.Seven .y6-x1 {opacity: 0.0;}
+.Seven .y6-x2 {opacity: 0.8;}
+.Seven .y6-x3 {opacity: 0.1;}
+.Seven .y6-x4 {opacity: 0.0;}
+.Seven .y6-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+EIGHT
+==============================
+*/
+
+.Eight .y6-x1 {opacity: 0.1;}
+.Eight .y6-x2 {opacity: 0.9;}
+.Eight .y6-x3 {opacity: 0.9;}
+.Eight .y6-x4 {opacity: 0.2;}
+
+.Eight .y5-x1 {opacity: 0.8;}
+.Eight .y5-x2 {opacity: 0.1;}
+.Eight .y5-x3 {opacity: 0.2;}
+.Eight .y5-x4 {opacity: 0.9;}
+
+.Eight .y4-x1 {opacity: 0.7;}
+.Eight .y4-x2 {opacity: 0.0;}
+.Eight .y4-x3 {opacity: 0.1;}
+.Eight .y4-x4 {opacity: 0.7;}
+
+.Eight .y3-x1 {opacity: 0.4;}
+.Eight .y3-x2 {opacity: 0.9;}
+.Eight .y3-x3 {opacity: 0.9;}
+.Eight .y3-x4 {opacity: 0.3;}
+
+.Eight .y2-x1 {opacity: 0.8;}
+.Eight .y2-x2 {opacity: 0.0;}
+.Eight .y2-x3 {opacity: 0.1;}
+.Eight .y2-x4 {opacity: 0.8;}
+
+.Eight .y1-x1 {opacity: 0.2;}
+.Eight .y1-x2 {opacity: 0.9;}
+.Eight .y1-x3 {opacity: 0.9;}
+.Eight .y1-x4 {opacity: 0.1;}
+
+/*
+==============================
+NINE
+==============================
+*/
+
+.Nine .y1-x1 {opacity: 0.1;}
+.Nine .y1-x2 {opacity: 0.8;}
+.Nine .y1-x3 {opacity: 0.9;}
+.Nine .y1-x4 {opacity: 0.2;}
+
+.Nine .y2-x1 {opacity: 0.8;}
+.Nine .y2-x2 {opacity: 0.1;}
+.Nine .y2-x3 {opacity: 0.0;}
+.Nine .y2-x4 {opacity: 0.9;}
+
+.Nine .y3-x1 {opacity: 0.8;}
+.Nine .y3-x2 {opacity: 0.1;}
+.Nine .y3-x3 {opacity: 0.0;}
+.Nine .y3-x4 {opacity: 0.9;}
+
+.Nine .y4-x1 {opacity: 0.1;}
+.Nine .y4-x2 {opacity: 0.8;}
+.Nine .y4-x3 {opacity: 0.8;}
+.Nine .y4-x4 {opacity: 0.9;}
+
+.Nine .y5-x1 {opacity: 0.5;}
+.Nine .y5-x2 {opacity: 0.0;}
+.Nine .y5-x3 {opacity: 0.1;}
+.Nine .y5-x4 {opacity: 0.8;}
+
+.Nine .y6-x1 {opacity: 0.1;}
+.Nine .y6-x2 {opacity: 0.8;}
+.Nine .y6-x3 {opacity: 0.9;}
+.Nine .y6-x4 {opacity: 0.1;}
+
+
+
+/*
+============================================
+============================================
+============================================
+PUNCTUATION
+============================================
+============================================
+============================================
+*/
+
+
+
+/*
+==============================
+SPACE
+==============================
+*/
+
+
+.Space .y1-x1 {opacity: 0.0;}
+.Space .y1-x2 {opacity: 0.0;}
+.Space .y1-x3 {opacity: 0.0;}
+
+.Space .y2-x1 {opacity: 0.0;}
+.Space .y2-x2 {opacity: 0.0;}
+.Space .y2-x3 {opacity: 0.0;}
+
+.Space .y3-x1 {opacity: 0.0;}
+.Space .y3-x2 {opacity: 0.0;}
+.Space .y3-x3 {opacity: 0.0;}
+
+.Space .y4-x1 {opacity: 0.0;}
+.Space .y4-x2 {opacity: 0.0;}
+.Space .y4-x3 {opacity: 0.0;}
+
+.Space .y5-x1 {opacity: 0.0;}
+.Space .y5-x2 {opacity: 0.0;}
+.Space .y5-x3 {opacity: 0.0;}
+
+.Space .y6-x1 {opacity: 0.0;}
+.Space .y6-x2 {opacity: 0.0;}
+.Space .y6-x3 {opacity: 0.0;}
+
+/*
+==============================
+PERIOD
+==============================
+*/
+
+.Period .y5-x1 {opacity: 0.0;}
+.Period .y5-x2 {opacity: 0.1;}
+
+.Period .y6-x1 {opacity: 0.1;}
+.Period .y6-x2 {opacity: 0.8;}
+
+
+
+/*
+==============================
+COMMA
+==============================
+*/
+
+.Comma .y5-x1 {opacity: 0.0;}
+.Comma .y5-x2 {opacity: 0.1;}
+
+.Comma .y6-x1 {opacity: 0.1;}
+.Comma .y6-x2 {opacity: 0.8;}
+
+.Comma .y7-x1 {opacity: 0.0;}
+.Comma .y7-x2 {opacity: 0.6;}
+
+
+/*
+==============================
+COLON
+==============================
+*/
+
+.Colon .y3-x1 {opacity: 0.0;}
+.Colon .y3-x2 {opacity: 0.1;}
+
+.Colon .y4-x1 {opacity: 0.1;}
+.Colon .y4-x2 {opacity: 0.8;}
+
+.Colon .y5-x1 {opacity: 0.0;}
+.Colon .y5-x2 {opacity: 0.1;}
+
+.Colon .y6-x1 {opacity: 0.1;}
+.Colon .y6-x2 {opacity: 0.8;}
+
+
+/*
+==============================
+SEMICOLON
+==============================
+*/
+
+.SemiColon .y3-x1 {opacity: 0.0;}
+.SemiColon .y3-x2 {opacity: 0.1;}
+
+.SemiColon .y4-x1 {opacity: 0.1;}
+.SemiColon .y4-x2 {opacity: 0.8;}
+
+.SemiColon .y5-x1 {opacity: 0.0;}
+.SemiColon .y5-x2 {opacity: 0.1;}
+
+.SemiColon .y6-x1 {opacity: 0.1;}
+.SemiColon .y6-x2 {opacity: 0.8;}
+
+.SemiColon .y7-x1 {opacity: 0.0;}
+.SemiColon .y7-x2 {opacity: 0.6;}
+
+
+/*
+==============================
+QUESTION
+==============================
+*/
+
+.Question .y1-x1 {opacity: 0.1;}
+.Question .y1-x2 {opacity: 0.9;}
+.Question .y1-x3 {opacity: 0.9;}
+.Question .y1-x4 {opacity: 0.2;}
+
+.Question .y2-x1 {opacity: 0.8;}
+.Question .y2-x2 {opacity: 0.1;}
+.Question .y2-x3 {opacity: 0.2;}
+.Question .y2-x4 {opacity: 0.9;}
+
+.Question .y3-x1 {opacity: 0.0;}
+.Question .y3-x2 {opacity: 0.1;}
+.Question .y3-x3 {opacity: 0.8;}
+.Question .y3-x4 {opacity: 0.2;}
+
+.Question .y4-x1 {opacity: 0.0;}
+.Question .y4-x2 {opacity: 0.7;}
+.Question .y4-x3 {opacity: 0.4;}
+.Question .y4-x4 {opacity: 0.0;}
+
+.Question .y5-x1 {opacity: 0.0;}
+.Question .y5-x2 {opacity: 0.2;}
+.Question .y5-x3 {opacity: 0.1;}
+.Question .y5-x4 {opacity: 0.0;}
+
+.Question .y6-x1 {opacity: 0.0;}
+.Question .y6-x2 {opacity: 0.8;}
+.Question .y6-x3 {opacity: 0.1;}
+.Question .y6-x4 {opacity: 0.0;}
+
+
+/*
+==============================
+EXCLAMATION
+==============================
+*/
+
+.Exclamation .y1-x2 {opacity: 0.8;}
+.Exclamation .y1-x1 {opacity: 0.1;}
+
+.Exclamation .y2-x2 {opacity: 0.8;}
+.Exclamation .y2-x1 {opacity: 0.2;}
+
+.Exclamation .y3-x2 {opacity: 0.7;}
+.Exclamation .y3-x1 {opacity: 0.2;}
+
+.Exclamation .y4-x2 {opacity: 0.7;}
+.Exclamation .y4-x1 {opacity: 0.1;}
+
+.Exclamation .y5-x2 {opacity: 0.1;}
+.Exclamation .y5-x1 {opacity: 0.0;}
+
+.Exclamation .y6-x2 {opacity: 0.8;}
+.Exclamation .y6-x1 {opacity: 0.2;}
+
+
+/*
+==============================
+AT SIGN
+==============================
+*/
+
+.AtSign .y1-x1 {opacity: 0.0;}
+.AtSign .y1-x2 {opacity: 0.3;}
+.AtSign .y1-x3 {opacity: 0.7;}
+.AtSign .y1-x4 {opacity: 0.8;}
+.AtSign .y1-x5 {opacity: 0.8;}
+.AtSign .y1-x6 {opacity: 0.2;}
+.AtSign .y1-x7 {opacity: 0.0;}
+
+.AtSign .y2-x1 {opacity: 0.4;}
+.AtSign .y2-x2 {opacity: 0.8;}
+.AtSign .y2-x3 {opacity: 0.2;}
+.AtSign .y2-x4 {opacity: 0.1;}
+.AtSign .y2-x5 {opacity: 0.2;}
+.AtSign .y2-x6 {opacity: 0.5;}
+.AtSign .y2-x7 {opacity: 0.7;}
+
+.AtSign .y3-x1 {opacity: 0.8;}
+.AtSign .y3-x2 {opacity: 0.2;}
+.AtSign .y3-x3 {opacity: 0.6;}
+.AtSign .y3-x4 {opacity: 0.8;}
+.AtSign .y3-x5 {opacity: 0.6;}
+.AtSign .y3-x6 {opacity: 0.0;}
+.AtSign .y3-x7 {opacity: 0.8;}
+
+.AtSign .y4-x1 {opacity: 0.9;}
+.AtSign .y4-x2 {opacity: 0.0;}
+.AtSign .y4-x3 {opacity: 0.9;}
+.AtSign .y4-x4 {opacity: 0.3;}
+.AtSign .y4-x5 {opacity: 0.8;}
+.AtSign .y4-x6 {opacity: 0.1;}
+.AtSign .y4-x7 {opacity: 0.8;}
+
+.AtSign .y5-x1 {opacity: 0.8;}
+.AtSign .y5-x2 {opacity: 0.0;}
+.AtSign .y5-x3 {opacity: 0.9;}
+.AtSign .y5-x4 {opacity: 0.1;}
+.AtSign .y5-x5 {opacity: 0.8;}
+.AtSign .y5-x6 {opacity: 0.2;}
+.AtSign .y5-x7 {opacity: 0.8;}
+
+.AtSign .y6-x1 {opacity: 0.6;}
+.AtSign .y6-x2 {opacity: 0.1;}
+.AtSign .y6-x3 {opacity: 0.8;}
+.AtSign .y6-x4 {opacity: 0.9;}
+.AtSign .y6-x5 {opacity: 0.9;}
+.AtSign .y6-x6 {opacity: 0.7;}
+.AtSign .y6-x7 {opacity: 0.2;}
+
+
+/*
+==============================
+OCTOTHORP
+==============================
+*/
+
+.Octothorp .y1-x1 {opacity: 0.0;}
+.Octothorp .y1-x2 {opacity: 0.0;}
+.Octothorp .y1-x3 {opacity: 0.8;}
+.Octothorp .y1-x4 {opacity: 0.1;}
+.Octothorp .y1-x5 {opacity: 0.2;}
+.Octothorp .y1-x6 {opacity: 0.7;}
+.Octothorp .y1-x7 {opacity: 0.0;}
+
+.Octothorp .y2-x1 {opacity: 0.2;}
+.Octothorp .y2-x2 {opacity: 0.6;}
+.Octothorp .y2-x3 {opacity: 0.8;}
+.Octothorp .y2-x4 {opacity: 0.7;}
+.Octothorp .y2-x5 {opacity: 0.8;}
+.Octothorp .y2-x6 {opacity: 0.7;}
+.Octothorp .y2-x7 {opacity: 0.6;}
+
+.Octothorp .y3-x1 {opacity: 0.0;}
+.Octothorp .y3-x2 {opacity: 0.2;}
+.Octothorp .y3-x2 {opacity: 0.2;}
+.Octothorp .y3-x3 {opacity: 0.6;}
+.Octothorp .y3-x4 {opacity: 0.0;}
+.Octothorp .y3-x5 {opacity: 0.9;}
+.Octothorp .y3-x6 {opacity: 0.1;}
+.Octothorp .y3-x7 {opacity: 0.0;}
+
+.Octothorp .y4-x1 {opacity: 0.8;}
+.Octothorp .y4-x2 {opacity: 0.9;}
+.Octothorp .y4-x3 {opacity: 0.8;}
+.Octothorp .y4-x4 {opacity: 0.7;}
+.Octothorp .y4-x5 {opacity: 0.8;}
+.Octothorp .y4-x6 {opacity: 0.7;}
+.Octothorp .y4-x7 {opacity: 0.4;}
+
+.Octothorp .y5-x1 {opacity: 0.0;}
+.Octothorp .y5-x2 {opacity: 0.8;}
+.Octothorp .y5-x3 {opacity: 0.2;}
+.Octothorp .y5-x4 {opacity: 0.3;}
+.Octothorp .y5-x5 {opacity: 0.8;}
+.Octothorp .y5-x6 {opacity: 0.0;}
+.Octothorp .y5-x7 {opacity: 0.0;}
+
+.Octothorp .y6-x1 {opacity: 0.0;}
+.Octothorp .y6-x2 {opacity: 0.5;}
+.Octothorp .y6-x3 {opacity: 0.0;}
+.Octothorp .y6-x4 {opacity: 0.3;}
+.Octothorp .y6-x5 {opacity: 0.2;}
+.Octothorp .y6-x6 {opacity: 0.0;}
+.Octothorp .y6-x7 {opacity: 0.0;}
+
+
+/*
+==============================
+AMPERSAND
+==============================
+*/
+
+.Ampersand .y1-x1 {opacity: 0.0;}
+.Ampersand .y1-x2 {opacity: 0.5;}
+.Ampersand .y1-x3 {opacity: 0.8;}
+.Ampersand .y1-x4 {opacity: 0.5;}
+.Ampersand .y1-x5 {opacity: 0.0;}
+.Ampersand .y1-x6 {opacity: 0.0;}
+
+.Ampersand .y2-x1 {opacity: 0.1;}
+.Ampersand .y2-x2 {opacity: 0.8;}
+.Ampersand .y2-x3 {opacity: 0.1;}
+.Ampersand .y2-x4 {opacity: 0.8;}
+.Ampersand .y2-x5 {opacity: 0.0;}
+.Ampersand .y2-x6 {opacity: 0.0;}
+
+.Ampersand .y3-x1 {opacity: 0.0;}
+.Ampersand .y3-x2 {opacity: 0.6;}
+.Ampersand .y3-x3 {opacity: 0.9;}
+.Ampersand .y3-x4 {opacity: 0.2;}
+.Ampersand .y3-x5 {opacity: 0.0;}
+.Ampersand .y3-x6 {opacity: 0.5;}
+
+.Ampersand .y4-x1 {opacity: 0.8;}
+.Ampersand .y4-x2 {opacity: 0.4;}
+.Ampersand .y4-x3 {opacity: 0.8;}
+.Ampersand .y4-x4 {opacity: 0.2;}
+.Ampersand .y4-x5 {opacity: 0.7;}
+.Ampersand .y4-x6 {opacity: 0.2;}
+
+.Ampersand .y5-x1 {opacity: 0.9;}
+.Ampersand .y5-x2 {opacity: 0.0;}
+.Ampersand .y5-x3 {opacity: 0.0;}
+.Ampersand .y5-x4 {opacity: 0.9;}
+.Ampersand .y5-x5 {opacity: 0.3;}
+.Ampersand .y5-x6 {opacity: 0.0;}
+
+.Ampersand .y6-x1 {opacity: 0.3;}
+.Ampersand .y6-x2 {opacity: 0.8;}
+.Ampersand .y6-x3 {opacity: 0.8;}
+.Ampersand .y6-x4 {opacity: 0.3;}
+.Ampersand .y6-x5 {opacity: 0.8;}
+.Ampersand .y6-x6 {opacity: 0.4;}
+
+/*
+==============================
+ASTERISK
+==============================
+*/
+
+.Asterisk .y1-x1 {opacity: 0.2;}
+.Asterisk .y1-x2 {opacity: 0.7;}
+.Asterisk .y1-x3 {opacity: 0.2;}
+
+.Asterisk .y2-x1 {opacity: 0.6;}
+.Asterisk .y2-x2 {opacity: 0.9;}
+.Asterisk .y2-x3 {opacity: 0.6;}
+
+.Asterisk .y3-x1 {opacity: 0.2;}
+.Asterisk .y3-x2 {opacity: 0.7;}
+.Asterisk .y3-x3 {opacity: 0.2;}
+
+
+/*
+==============================
+M DASH
+==============================
+*/
+
+.mDash .y4-x1 {opacity: 0.1;}
+.mDash .y4-x2 {opacity: 0.8;}
+.mDash .y4-x3 {opacity: 0.8;}
+.mDash .y4-x4 {opacity: 0.8;}
+.mDash .y4-x5 {opacity: 0.8;}
+.mDash .y4-x6 {opacity: 0.8;}
+.mDash .y4-x7 {opacity: 0.7;}
+
+.mDash .y5-x1 {opacity: 0.0;}
+.mDash .y5-x2 {opacity: 0.0;}
+.mDash .y5-x3 {opacity: 0.0;}
+.mDash .y5-x4 {opacity: 0.0;}
+.mDash .y5-x5 {opacity: 0.0;}
+.mDash .y5-x6 {opacity: 0.0;}
+.mDash .y5-x7 {opacity: 0.0;}
+
+/*
+==============================
+N DASH
+==============================
+*/
+
+.nDash .y4-x1 {opacity: 0.1;}
+.nDash .y4-x2 {opacity: 0.8;}
+.nDash .y4-x3 {opacity: 0.8;}
+.nDash .y4-x4 {opacity: 0.8;}
+.nDash .y4-x5 {opacity: 0.7;}
+
+.nDash .y5-x1 {opacity: 0.0;}
+.nDash .y5-x2 {opacity: 0.0;}
+.nDash .y5-x3 {opacity: 0.0;}
+.nDash .y5-x4 {opacity: 0.0;}
+.nDash .y5-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+HYPHEN
+==============================
+*/
+
+.Hyphen .y4-x1 {opacity: 0.1;}
+.Hyphen .y4-x2 {opacity: 0.8;}
+.Hyphen .y4-x3 {opacity: 0.7;}
+
+.Hyphen .y5-x1 {opacity: 0.0;}
+.Hyphen .y5-x2 {opacity: 0.0;}
+.Hyphen .y5-x3 {opacity: 0.0;}
+
+
+/*
+==============================
+DOLLAR
+==============================
+*/
+
+.Dollar .y0-x1 {opacity: 0.0;}
+.Dollar .y0-x2 {opacity: 0.0;}
+.Dollar .y0-x3 {opacity: 0.8;}
+.Dollar .y0-x4 {opacity: 0.0;}
+.Dollar .y0-x5 {opacity: 0.0;}
+
+.Dollar .y1-x1 {opacity: 0.1;}
+.Dollar .y1-x2 {opacity: 0.4;}
+.Dollar .y1-x3 {opacity: 0.9;}
+.Dollar .y1-x4 {opacity: 0.5;}
+.Dollar .y1-x5 {opacity: 0.0;}
+
+.Dollar .y2-x1 {opacity: 0.8;}
+.Dollar .y2-x2 {opacity: 0.7;}
+.Dollar .y2-x3 {opacity: 0.0;}
+.Dollar .y2-x4 {opacity: 0.4;}
+.Dollar .y2-x5 {opacity: 0.2;}
+
+.Dollar .y3-x1 {opacity: 0.4;}
+.Dollar .y3-x2 {opacity: 0.9;}
+.Dollar .y3-x3 {opacity: 0.7;}
+.Dollar .y3-x4 {opacity: 0.2;}
+.Dollar .y3-x5 {opacity: 0.0;}
+
+.Dollar .y4-x1 {opacity: 0.1;}
+.Dollar .y4-x2 {opacity: 0.2;}
+.Dollar .y4-x3 {opacity: 0.7;}
+.Dollar .y4-x4 {opacity: 0.9;}
+.Dollar .y4-x5 {opacity: 0.3;}
+
+.Dollar .y5-x1 {opacity: 0.6;}
+.Dollar .y5-x2 {opacity: 0.3;}
+.Dollar .y5-x3 {opacity: 0.0;}
+.Dollar .y5-x4 {opacity: 0.8;}
+.Dollar .y5-x5 {opacity: 0.6;}
+
+.Dollar .y6-x1 {opacity: 0.0;}
+.Dollar .y6-x2 {opacity: 0.5;}
+.Dollar .y6-x3 {opacity: 0.9;}
+.Dollar .y6-x4 {opacity: 0.5;}
+.Dollar .y6-x5 {opacity: 0.1;}
+
+.Dollar .y7-x1 {opacity: 0.0;}
+.Dollar .y7-x2 {opacity: 0.0;}
+.Dollar .y7-x3 {opacity: 0.8;}
+.Dollar .y7-x4 {opacity: 0.0;}
+.Dollar .y7-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+YEN
+==============================
+*/
+
+.Yen .y1-x1 {opacity: 0.8;}
+.Yen .y1-x2 {opacity: 0.3;}
+.Yen .y1-x3 {opacity: 0.0;}
+.Yen .y1-x4 {opacity: 0.2;}
+.Yen .y1-x5 {opacity: 0.8;}
+
+.Yen .y2-x1 {opacity: 0.1;}
+.Yen .y2-x2 {opacity: 0.8;}
+.Yen .y2-x3 {opacity: 0.0;}
+.Yen .y2-x4 {opacity: 0.8;}
+.Yen .y2-x5 {opacity: 0.1;}
+
+.Yen .y3-x1 {opacity: 0.6;}
+.Yen .y3-x2 {opacity: 0.7;}
+.Yen .y3-x3 {opacity: 0.9;}
+.Yen .y3-x4 {opacity: 0.7;}
+.Yen .y3-x5 {opacity: 0.6;}
+
+.Yen .y4-x1 {opacity: 0.0;}
+.Yen .y4-x2 {opacity: 0.2;}
+.Yen .y4-x3 {opacity: 0.8;}
+.Yen .y4-x4 {opacity: 0.2;}
+.Yen .y4-x5 {opacity: 0.0;}
+
+.Yen .y5-x1 {opacity: 0.6;}
+.Yen .y5-x2 {opacity: 0.7;}
+.Yen .y5-x3 {opacity: 0.8;}
+.Yen .y5-x4 {opacity: 0.7;}
+.Yen .y5-x5 {opacity: 0.6;}
+
+.Yen .y6-x1 {opacity: 0.0;}
+.Yen .y6-x2 {opacity: 0.1;}
+.Yen .y6-x3 {opacity: 0.9;}
+.Yen .y6-x4 {opacity: 0.1;}
+.Yen .y6-x5 {opacity: 0.0;}
+
+
+/*
+==============================
+POUND
+==============================
+*/
+
+.Pound .y1-x1 {opacity: 0.0;}
+.Pound .y1-x2 {opacity: 0.3;}
+.Pound .y1-x3 {opacity: 0.9;}
+.Pound .y1-x4 {opacity: 0.8;}
+.Pound .y1-x5 {opacity: 0.1;}
+
+.Pound .y2-x1 {opacity: 0.1;}
+.Pound .y2-x2 {opacity: 0.8;}
+.Pound .y2-x3 {opacity: 0.1;}
+.Pound .y2-x4 {opacity: 0.3;}
+.Pound .y2-x5 {opacity: 0.7;}
+
+.Pound .y3-x1 {opacity: 0.2;}
+.Pound .y3-x2 {opacity: 0.8;}
+.Pound .y3-x3 {opacity: 0.0;}
+.Pound .y3-x4 {opacity: 0.0;}
+.Pound .y3-x5 {opacity: 0.0;}
+
+.Pound .y4-x1 {opacity: 0.6;}
+.Pound .y4-x2 {opacity: 0.9;}
+.Pound .y4-x3 {opacity: 0.8;}
+.Pound .y4-x4 {opacity: 0.6;}
+.Pound .y4-x5 {opacity: 0.0;}
+
+.Pound .y5-x1 {opacity: 0.0;}
+.Pound .y5-x2 {opacity: 0.8;}
+.Pound .y5-x3 {opacity: 0.2;}
+.Pound .y5-x4 {opacity: 0.1;}
+.Pound .y5-x5 {opacity: 0.4;}
+
+.Pound .y6-x1 {opacity: 0.6;}
+.Pound .y6-x2 {opacity: 0.5;}
+.Pound .y6-x3 {opacity: 0.6;}
+.Pound .y6-x4 {opacity: 0.8;}
+.Pound .y6-x5 {opacity: 0.3;}
+
+
+
+/*
+==============================
+PERCENT
+==============================
+*/
+
+.Percent .y1-x1 {opacity: 0.2;}
+.Percent .y1-x2 {opacity: 0.8;}
+.Percent .y1-x3 {opacity: 0.3;}
+.Percent .y1-x4 {opacity: 0.0;}
+.Percent .y1-x5 {opacity: 0.1;}
+.Percent .y1-x6 {opacity: 0.8;}
+.Percent .y1-x7 {opacity: 0.0;}
+
+.Percent .y2-x1 {opacity: 0.8;}
+.Percent .y2-x2 {opacity: 0.1;}
+.Percent .y2-x3 {opacity: 0.8;}
+.Percent .y2-x4 {opacity: 0.3;}
+.Percent .y2-x5 {opacity: 0.8;}
+.Percent .y2-x6 {opacity: 0.1;}
+.Percent .y2-x7 {opacity: 0.0;}
+
+.Percent .y3-x1 {opacity: 0.1;}
+.Percent .y3-x2 {opacity: 0.9;}
+.Percent .y3-x3 {opacity: 0.3;}
+.Percent .y3-x4 {opacity: 0.6;}
+.Percent .y3-x5 {opacity: 0.2;}
+.Percent .y3-x6 {opacity: 0.0;}
+.Percent .y3-x7 {opacity: 0.0;}
+
+.Percent .y4-x1 {opacity: 0.0;}
+.Percent .y4-x2 {opacity: 0.0;}
+.Percent .y4-x3 {opacity: 0.4;}
+.Percent .y4-x4 {opacity: 0.6;}
+.Percent .y4-x5 {opacity: 0.3;}
+.Percent .y4-x6 {opacity: 0.9;}
+.Percent .y4-x7 {opacity: 0.2;}
+
+.Percent .y5-x1 {opacity: 0.0;}
+.Percent .y5-x2 {opacity: 0.1;}
+.Percent .y5-x3 {opacity: 0.8;}
+.Percent .y5-x4 {opacity: 0.1;}
+.Percent .y5-x5 {opacity: 0.8;}
+.Percent .y5-x6 {opacity: 0.1;}
+.Percent .y5-x7 {opacity: 0.8;}
+
+.Percent .y6-x1 {opacity: 0.0;}
+.Percent .y6-x2 {opacity: 0.8;}
+.Percent .y6-x3 {opacity: 0.1;}
+.Percent .y6-x4 {opacity: 0.0;}
+.Percent .y6-x5 {opacity: 0.3;}
+.Percent .y6-x6 {opacity: 0.8;}
+.Percent .y6-x7 {opacity: 0.3;}
