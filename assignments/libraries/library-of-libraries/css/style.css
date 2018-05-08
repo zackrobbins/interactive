@@ -1,0 +1,51 @@
+body {
+    background-color: darkslategrey;
+}
+
+.container {
+    width: 95vw;
+    margin: auto
+}
+
+/*
+h2 {
+    font-family: atlas grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-top: 3em;
+    margin-bottom: 0;
+    color: black;
+}
+*/
+
+p {
+    display: inline;
+    font-family:serif;
+    font-size: 3vw;
+/*    line-height: 50px;*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: atlas grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: yellow;
+}
+
+@media only screen and (max-width:1000px) {
+    p {
+        font-size: 6vw;
+    }
+    a {
+        font-size:12px;
+    }
+}

@@ -1,0 +1,114 @@
+/*
+==============================
+BASE
+==============================
+*/
+
+
+* {    
+    -webkit-font-smoothing:antialiased;
+}
+
+body {
+/*    background-color: white;*/
+    
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 14pt;
+    font-family:helvetica, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 16px;
+}
+
+p {
+    font-family: arial , sans-serif;
+    font-size: 30px;
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width:900px) {
+    .container {
+        width: 90vw;
+    }
+    p {
+        font-size: 22px;
+    }
+    
+    body {
+        background-color: aqua;
+    }
+    
+     
+    a {
+        color: deeppink;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .container {
+        width: 65vw;
+    }
+    p {
+        font-size: 24px;
+    }
+    
+     body {
+        background-color: yellow;
+    }
+     
+    a {
+        color: red;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .container {
+        width: 65vw;
+    }
+    p {
+        font-size: 26px;
+    }
+    
+     body {
+        background-color: crimson;
+    } 
+    
+    a {
+        color: aqua;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    .container {
+        width: 50vw;
+    }
+    p {
+        font-size: 30px;
+    }
+    
+     body {
+        background-color: darkorchid;
+    }
+    
+    a {
+        color: yellow;
+    }
+}
+

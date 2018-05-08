@@ -1,0 +1,193 @@
+/*
+=====================
+FONTS
+=====================
+*/
+
+
+body {
+    color: blue;
+    font-family: sans-serif;
+    /*    font-family: 'Space Mono', monospace;
+font-family: arial narrow, 'Raleway Dots', cursive;*/
+}
+
+
+
+
+/*
+=====================
+BODY
+=====================
+*/
+
+
+body { 
+    
+}
+
+.marquee {
+    height: 150px;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+    
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 9em;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: blue;
+    border-bottom: 1px solid blue;
+    z-index: 500px
+}
+
+
+
+.marquee #m-welcome {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+}
+
+.marquee #m-history {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 8s linear infinite;
+}
+
+.marquee #m-history-fix {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: fixed;
+    overflow: hidden;
+    animation: marquee 8s linear infinite;
+}
+
+.marquee #m-images {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+}
+
+.marquee #m-faqs {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 7s linear infinite;
+}
+
+
+
+
+.marquee .fifty-percent {
+    float: left;
+    width: 50%;
+}
+
+.marquee .thirty-percent {
+    float: left;
+    width: 33%;
+}
+
+.marquee .twentyfive-percent {
+    float: left;
+    width: 25%;
+}
+
+.marquee .twenty-percent {
+    float: left;
+    width: 25%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+.marquee:hover {
+    background: blue;
+    color: white;
+}
+
+
+.marquee-bottom {
+    height: 150px;
+    width: 100%;
+
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 9em;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: blue;
+    border-bottom: 1px solid blue;
+    z-index: 500px
+}
+
+.marquee-bottom #m-back {
+    display: block;
+    width: 200%;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+    border-top: 1px solid blue;
+}
+
+.marquee-bottom:hover {
+    background: blue;
+    color: white;
+}
+
+.marquee-bottom .fifty-percent {
+    float: left;
+    width: 25%;
+}
+
+/*
+=====================
+PAGES
+=====================
+*/
+
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 100px
+}
+
+.content p {
+    margin: 1em;
+    font-size: 1.5em;
+    line-height: 1.2em
+}
+
+img {
+    max-width: 600px;
+    margin: 3em auto;
+}

@@ -1,0 +1,195 @@
+body {
+    background: black;
+}
+
+
+/*
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid yellow;
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+
+#square {
+    width: 200px;
+    height: 200px;
+    background: red;
+    top: 160px;
+    left: 350px;
+    position: absolute;
+}
+*/
+
+
+/*
+=========================
+ROOM 1
+=========================
+*/
+
+
+.room.one {
+    width: 100%;
+}
+
+.object {
+    position: absolute;
+}
+
+#kiwi {
+    position: absolute;
+    margin: 410px 0 0 610px;
+    z-index: 800;
+}
+
+#kiwi-fruit {
+    width: 140px;
+    height: 110px;
+    background: #b7844b;
+    border-radius: 50%;
+    z-index: 850;
+}
+
+#kiwi-drop-shadow {
+    width: 140px;
+    height: 50px;
+    background: rgba(0,0,0,0.3);
+    filter: blur(.75em);
+    border-radius: 50%;
+    z-index: 820;
+    margin: 4.75em 0 0 0;
+}
+
+#orange {
+    position: absolute;
+    margin: 250px 0 0 620px;
+    z-index: 700;
+}
+
+#orange-fruit {
+    width: 220px;
+    height: 230px;
+    background: #fe8c05;
+    border-radius: 50%;
+    z-index: 750;
+}
+
+#orange-drop-shadow {
+    width: 220px;
+    height: 100px;
+    background: rgba(0,0,0,0.3);
+    filter: blur(.75em);
+    border-radius: 50%;
+    margin: 10em 0 0 0;
+    z-index: 720;
+}
+
+#vase {
+    margin: 5em 0 0 26em;
+    z-index: 400;
+}
+
+#vase-top {
+    border-bottom: 6em solid white;
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+    height: 0;
+    width: 8em;
+    z-index: 480;
+}
+
+#vase-top-round {
+    width: 14em;
+    height: 1.5em;
+    background: white;
+    position: absolute;
+    margin: 5.3em 0 0 0;
+    border-radius: 50%;
+    z-index: 470;
+}
+
+#vase-middle {
+    width: 14em;
+    height: 2em;
+    background: lightgray;
+    position: absolute;
+    margin: 6em 0 0 0;
+    z-index: 430;
+}
+
+#vase-middle-round {
+    width: 14em;
+    height: 1.5em;
+    background: lightgray;
+    position: absolute;
+    margin: 7.3em 0 0 0;
+    border-radius: 50%;
+    z-index: 420;
+}
+
+#vase-bottom {
+    border-top: 6em solid white;
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+    height: 0;
+    width: 8em;
+    margin: 8em 0 0 0;
+    z-index: 410;
+}
+
+#vase-bottom-round {
+    width: 8em;
+    height: 1.5em;
+    background: white;
+    position: absolute;
+    margin: 13.2em 0 0 3em;
+    border-radius: 50%;
+    z-index: 420;
+}
+
+#paper {
+    border-bottom: 25em solid #50b948;
+    border-left: 3em solid transparent;
+    border-right: 10em solid transparent;
+    width: 33em;
+    margin: 11em 0 0 16em;
+    z-index: 100;
+}
+
+#paper-shadow {
+    border-bottom: 25em solid rgba(0,0,0,0.3);
+    border-left: 3em solid transparent;
+    border-right: 10em solid transparent;
+    width: 33em;
+    margin: 11em 0 0 16em;
+    -webkit-filter: blur(3px); /* Safari */
+    filter: blur(3px);
+    z-index: 50;
+}
+
+
+#table {
+    border-bottom: 550px solid #ebb04c;
+    border-left: 4em solid transparent;
+    border-right: 22em solid transparent;
+    border-radius: 2%;
+    width: 50em;
+    margin: 100px 0 0 100px;
+    z-index: 0;
+}
+
+
+/*
+=========================
+ROOM 2
+=========================
+*/
+
+
+

@@ -98,19 +98,83 @@ BASE
 }
 
 body {
-    font-size: 24px;
+/*    background-color: white;*/
+    
 }
 
-nav {
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu {
     display: block;
-    margin: 2em 0 0 0.5em;
+    margin: 2em 0 4em 2em;
 }
 
 h1 {
-    margin-top: 0;
-    font-style: italic;
+    font-size: 14pt;
+    font-family:helvetica, sans-serif;
+/*    text-transform: uppercase;*/
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 0.5;
 }
 
 a:hover {
     color: blue;
 }
+
+li {
+    font-family:serif;
+    font-size: 5em;
+    line-height:1em;
+}
+
+@media only screen and (max-width:900px) {
+    li {
+        font-size: 2em;
+    }
+    h1 {
+        margin-top:50px;
+    }
+}
+
+.menu-button {
+    position: fixed;
+    z-index: 500;
+    width: 200px;
+    height: 200px;
+    
+    right: 2em;
+    top: 2em;
+    
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+
+    
+    border: solid 3px blue;
+    border-radius: 50%;
+}
+
+.menu-button:hover {
+    color: lightgray;
+    background-color: blue;
+    cursor: pointer;
+}
+.menu-button a:hover {
+    color: lightgray;
+}
+
+.vertical {
+
+    padding: 40% 0 0 0;
+}
+
+
+

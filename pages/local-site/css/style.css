@@ -83,11 +83,11 @@ TONIGHT SECTION
 }
 
 .countdown .pixel {
-    border-radius:0%;
+    border-radius:50%;
     transform: rotate(0);
-    width: 4em;
-    height: 1em;
-    animation: spin 10s linear 0s infinite;
+    width: 3em;
+    height: .5em;
+    animation: spin 100s linear 0s infinite;
     background-color:black;
 }
 
