@@ -187,6 +187,13 @@ p {
     color: grey;
 }
 
+.module ul {
+    font-family: arial, sans-serif;
+    list-style-type:decimal;
+    padding: none;
+    margin: none;
+}
+
 .quote {
     display: block;
     font-family: UntitledSerifTest-Regular, Times New Roman, serif;
@@ -234,6 +241,19 @@ Columns
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1400px) {
     .column {
+        width: 100%;
+    }
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .two-column {
         width: 100%;
     }
 }
