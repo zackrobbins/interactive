@@ -5,14 +5,6 @@ MOBILE FIRST
 */
 
 
-/*
-.header-bar {
-    width: 50%;
-    height: 4em;
-    padding: 1em;
-    background-color: yellow;
-}
-*/
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -20,7 +12,7 @@ MOBILE FIRST
 }
 
 body {
-    color: #7c7c7c;
+    color: #4d4d4d;
     font-size: 100%;
     padding: 5em 0;
 }
@@ -33,80 +25,6 @@ body {
     z-index: 500;
 }
 
-h1 {
-    font-weight: normal;
-    font-family: UntitledSerifTest-Regular, Times New Roman, serif;
-    font-size: 3em;
-    line-height: 1em;
-}
-
-h2 {
-    font-weight: normal;
-    font-family: UntitledSerifTest-Regular, Times New Roman, serif;
-}
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.centered {
-    text-align: center;
-}
-
-/*
-nav {
-    float: right;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 50%;
-    text-decoration: none;
-    color: black;
-    font-family: arial, sans-serif;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: aqua;
-}
-
-nav li {
-    float: right;
-}
-
-nav li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: aquamarine;
-}
-*/
-
-
-
-/*
-===================
-FROM JSFIDDLE
-===================
-*/
-
-
-/*
-body {
-  margin:0;
-  
-  }
-*/
   
 .header-bar {
     width: 100%;
@@ -140,12 +58,12 @@ body {
 
 .nav-container .cta-box {
     border: 2px solid #3d429e;
-    border-radius: 5px;
-    color: #7c7c7c;
+    border-radius: 2px;
+    color: #4d4d4d;
     }
 
 .module .cta-box {
-    border-radius: 5px;
+    border-radius: 2px;
     color: white;
     }
 
@@ -156,7 +74,7 @@ body {
 
 .topnav a:hover {
   background-color: #3d429e; 
-  border-radius: 4px;
+  border-radius: 2px;
   color: white;
 }
 
@@ -194,16 +112,14 @@ body {
 
 .module {
     background-color: none;
-    padding: 25% 5%;
+    padding: 25% 40px;
 }
 
-.section-one {
-    background-color: lightgrey;
-}
+
 
 .cta {
-    width: 180px;
-    margin: 10px auto;
+    width: 150px;
+    margin: 50px auto;
     background-color: #d95959;
     padding: 16px 8px;
     border-radius: 2px;
@@ -211,10 +127,41 @@ body {
 
 .cta a {
     font-family: arial, sans-serif;
-/*    font-size: 14pt;*/
+}
+
+.section-one .cta {
+    background-color: #3d429e;
+
+}
+
+h1 {
+    font-weight: normal;
+    font-family: ChronicleTextG1-Roman, Times New Roman, serif;
+    font-size: 3.25em;
+    line-height: 1em;
+    margin: 50px auto;
+}
+
+h2 {
+    margin: 50px auto;
+    font-weight: normal;
+    font-family: ChronicleTextG1-Roman, Times New Roman, serif;
+    font-size: 1.875em;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.centered {
+    text-align: center;
 }
 
 p {
     font-family: arial, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
