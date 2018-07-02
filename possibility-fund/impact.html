@@ -3,40 +3,64 @@
 
 <head>
     <meta charset="utf-8">
-    <title>The Possibility Fund</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>About</title>
+    <link rel="stylesheet" href="css/clear.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Approach</li>
-            <li>Impact</li>
-            <li class="get-involved">Get Involved</li>
-        </ul>
-    </nav>
     
-    <div class="module">
-        <div class="content centered">
-                <h1>Create a bright future for <em>everyone</em>.</h1>
-                <h3>Shifting mindsets, transforming communities, producing sustainable results.</h3>
-            <div class="cta">
-                <p class="cta-text">Learn More</p>
-            </div>
+    <div class="main-logo">
+        <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg"></a>
+    </div>
+        
+
+    <div class="header-bar">
+        
+      <div class="nav-container">     
+        <div class="topnav" id="myTopnav">
+          <a href="about.html">About</a>
+          <a href="approach.html">Approach</a>
+          <a href="impact.html">Impact</a>
+          <a href="get-involved.html" class="cta-box">Get Involved</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+    </div>
+        
+        
+        
+    <div class="module page-about">
+        <div class="centered">
+        
+            <h2 class="intro" style="margin: 3em 0;">In Progress</h2>
+            
         </div>
     </div>
     
     
-    <div class="module">
-        <div class="content centered">
-                <h2>The Possibility Fund works with visionary leaders and organization on the frontlines of social change. We believe that any intractable problem in the world can be reframed and overcome.</h2>
-            <div class="cta">
-                <p class="cta-text">Learn How</p>
-            </div>
-        </div>
+
+
+
+    
+    <div class="right-side">
+    
     </div>
+    
+<!--  ================
+      JAVASCRIPT
+      ================= -->
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>    
     
     
 </body>

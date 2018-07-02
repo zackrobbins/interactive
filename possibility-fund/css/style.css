@@ -100,7 +100,7 @@ body {
 
 .module {
     background-color: none;
-    padding: 5% 40px;
+    padding: 2em 40px;
     max-width: 70%;
     margin:auto;
     overflow: hidden;
@@ -291,7 +291,7 @@ ABOUT
 }
 */
 
-.page-about h1, h2, h3 {
+.purple {
     color: #3d429e;
 }
 
@@ -311,7 +311,8 @@ ABOUT
 }
 
 .post-body {
-    font-size: 120%;
+    font-size: 130%;
+    line-height: 150%;
     font-family: arial, sans-serif;
     text-align: left;
 }
