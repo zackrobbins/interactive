@@ -6,14 +6,15 @@ MOBILE FIRST
 
 
 
-* {
+*, .cta, cta-box {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 body {
-    color: #4d4d4d;
-    font-size: 100%;
+    color: #262626;
+/*    font-size: 1rem;*/
     padding: 5em 0;
 }
 
@@ -21,10 +22,9 @@ body {
     width: 300px;
     position: fixed;
     top: 15px;
-    left: 15px;
+    left: 25px;
     z-index: 500;
 }
-
   
 .header-bar {
     width: 100%;
@@ -42,7 +42,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    font-family:Arial;
+    font-family:Calibre-Regular, arial;
     }
 
 .topnav a {
@@ -50,15 +50,16 @@ body {
     display: block;
     color: #3d429e;
     text-align: center;
-    padding: 14px 16px;
-    margin: .5em;
+/*    padding: .7em 1em;*/
+    padding: 13px;
+    margin: 1em 1em 1em 0;
     text-decoration: none;
     font-size: 18px;
     }
 
 .topnav a:hover {
   background-color: #3d429e; 
-  border-radius: 25px;
+  border-radius: 2em;
   color: white;
 }
 
@@ -97,46 +98,41 @@ body {
   }
 }
 
-
-.module {
-    background-color: none;
-    padding: 2em 40px;
-    max-width: 70%;
-    margin:auto;
-    overflow: hidden;
-}
-
-.module ul {
-    font-family: arial, sans-serif;
-    
-    list-style-type:decimal;
-    padding-left: 30px;
-    color: red;
-}
-
-.module li {
-    margin: 10px 0;
-    color: grey;
-    font-size: 125%;
-}
-
 .nav-container .cta-box {
+    height: 44px;
     border: 2px solid #3d429e;
-    border-radius: 25px;
+    border-radius: 2em;
+    padding: 11px 13px;
     color: #3d429e;
     }
 
-
+/*
+.cta-box {
+    display: block;
+    height: 44px;
+    width: 170px;
+    margin: 80px auto;
+    border: 2px solid #3d429e;
+    background-color: white;
+    padding: 16px 10px;
+    border-radius: 2em;
+    
+    font-family: Calibre-Regular, arial, sans-serif;
+    color: white;
+}
+*/
 
 .cta {
     display: block;
+    height: 44px;
     width: 170px;
     margin: 80px auto;
     background-color: #d95959;
     padding: 16px 10px;
-    border-radius: 25px;
+/*    padding: .7em 1em;*/
+    border-radius: 2em;
     
-    font-family: Arial, sans-serif;
+    font-family: Calibre-Regular, arial, sans-serif;
     color: white;
 }
 
@@ -165,6 +161,30 @@ body {
     background-color: #d95959;
 }
 
+.module {
+    background-color: none;
+    padding: 2em 40px;
+    max-width: 70%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.module ul {
+    font-family: Calibre-Regular, arial, sans-serif;
+    line-height: 125%;
+    
+    list-style-type:decimal;
+    padding-left: 30px;
+}
+
+.module li {
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 125%
+}
+
+
+
 .header {
     max-width: 75%;
     margin: 80px auto;
@@ -174,12 +194,15 @@ body {
     margin: 50px auto;
 }
 
+.all-caps {
+    text-transform: uppercase;
+}
+
 
 h1 {
     font-weight: normal;
     font-family: UntitledSerifTest-Regular, Times New Roman, serif;
     font-size:5vw;
-    line-height: 105%;
 }
 
 h2 {
@@ -189,6 +212,13 @@ h2 {
     line-height: normal;
 }
 
+h3 {
+    font-family: Calibre-Regular, arial, sans-serif;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    color: #262626;
+    font-size: 2.5em;
+}
 
 a {
     text-decoration: none;
@@ -201,10 +231,10 @@ a {
 }
 
 p {
-    font-family: arial, sans-serif;
-    font-size: 125%;
+    font-family: Calibre-Regular, arial, sans-serif;
+    font-size: 30px;
     line-height: 125%;
-    color: grey;
+    color: #262626;
 }
 
 em {
@@ -220,14 +250,14 @@ em {
     
     background-color: #78b0bd;
     color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
 .dot {
-    height: 20px;
-    width: 20px;
-    margin-bottom: 10px;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 5px;
     background-color: yellow;
     border-radius: 50%;
     display: inline-block;
@@ -259,7 +289,8 @@ Columns
 .two-column {
     float: left;
     width: 50%;
-/*    padding: 10px;*/
+    padding: 10px;
+    margin: auto;
 }
 
 
@@ -310,10 +341,10 @@ ABOUT
     
 }
 
-.post-body {
-    font-size: 130%;
-    line-height: 150%;
-    font-family: arial, sans-serif;
+.post-body { 
+    font-size: 30px;
+    line-height: 130%;
+    font-family: Calibre-Regular, arial, sans-serif;
     text-align: left;
 }
 
@@ -322,7 +353,7 @@ ABOUT
 }
 
 .brick {
-    padding: 20px;
+    padding: 30px;
 }
 
 /*
@@ -359,7 +390,7 @@ MEDIA QUERIES
    
     h1 {font-size: 7vw;}
     h2 {font-size: 2em;}
-    p { font-size: 125%;
+    p { font-size: 30px;
         line-height: 125%;}   
     
     
@@ -367,7 +398,7 @@ MEDIA QUERIES
         line-height: 125%;}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
     .two-column {width: 100%;}   
 }
 
