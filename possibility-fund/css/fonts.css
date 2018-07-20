@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'UntitledSerifWeb-Regular';
+  src: url('../fonts/UntitledSerifWeb-Regular.eot');
+  src: url('../fonts/UntitledSerifWeb-Regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/UntitledSerifWeb-Regular.woff2') format('woff2'), 
+       url('../fonts/UntitledSerifWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UntitledSerifWeb-RegularItalic';
+  src: url('../fonts/UntitledSerifWeb-RegularItalic.eot');
+  src: url('../fonts/UntitledSerifWeb-RegularItalic?#iefix') format('embedded-opentype'), 
+       url('../fonts/UntitledSerifWeb-RegularItalic.woff2') format('woff2'), 
+       url('../fonts/UntitledSerifWeb-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Regular';
+  src: url('../fonts/CalibreWeb-Regular.eot');
+  src: url('../fonts/CalibreWeb-Regular?#iefix') format('embedded-opentype'), 
+       url('../fonts/CalibreWeb-Regular.woff2') format('woff2'), 
+       url('../fonts/CalibreWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+.UntitledSerifWeb-Regular {
+  font-family: 'UntitledSerifWeb-Regular';
+}
+
+
+.UntitledSerifWeb-RegularItalic {
+  font-family: 'UntitledSerifWeb-RegularItalic';
+  font-style: italic;
+}
+
+.CalibreWeb-Regular {
+  font-family: 'CalibreWeb-Regular';
+  font-style: italic;
+}
