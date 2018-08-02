@@ -19,16 +19,8 @@ body {
     font-family:'CalibreWeb-Regular', arial, sans-serif;
     font-size: 30px;
 }
-
-.main-logo {
-    width: 300px;
-    position: fixed;
-    top: 18px;
-    left: 5%;
-    z-index: 500;
-}
   
-.header-bar {
+.fixed-header {
     height: 80px;
     width: 100%;
     margin:0;
@@ -36,13 +28,29 @@ body {
     top:0;
     background-color: white;
     z-index: 100;
+    padding: 0 30px;
     }  
+
+.nav-wrapper {
+    max-width: 1300px;
+    height: 80px;
+    margin: 0 auto;
+/*    padding: 0 75px;*/
+}
+
+.main-logo {
+    width: 300px;
+    position: fixed;
+    top: 18px;
+/*    left: 5%;*/
+    z-index: 500;
+}
   
-.nav-container {
+.main-nav {
     float:right;
     background-color: white;
-    position: fixed;
-    right: 5%;
+/*    position: absolute;*/
+/*    right: 0;*/
     } 
 
 .topnav {
@@ -68,7 +76,7 @@ body {
   color: white;
 }
 
-.nav-container .cta-box {
+.main-nav .cta-box {
     height: 44px;
     border: 2px solid #3d429e;
     border-radius: 2em;
@@ -154,10 +162,8 @@ body {
 
 .module {
     background-color: none;
-/*    width: 90%;*/
     max-width: 1300px;
-    margin:0 auto 200px;
-    padding: 0 30px;
+    margin:0 auto 150px;
     overflow: hidden;
 }
 
@@ -171,15 +177,15 @@ body {
 
 .module li {
     margin: 10px 0;
-/*    font-size: 24px;*/
     line-height: 120%
 }
 
 .divider {
-    max-width: 1360px;
-    padding: 200px 30px 0; 
-/*    margin-bottom: 200px;*/
+/*    max-width: 1300px;*/
+    width: 100%;
+    padding-top: 200px;
     border-top: solid 1px #bfbfbf;
+/*    margin: 0 30px;*/
 }
 
 footer {
@@ -283,7 +289,6 @@ a {
 
 p {
     font-family: 'CalibreWeb-Regular', arial, sans-serif;
-/*    font-size: 26px;*/
     line-height: 120%;
     color: #262626;
 }
@@ -295,7 +300,7 @@ em {
 .quote {
     display: block;
     font-family: 'UntitledSerifWeb-Regular';
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     line-height: 120%;
     
@@ -362,7 +367,7 @@ input[type=submit] {
     height: 44px;
     margin: 50px auto;
     padding: 11px 10px;
-    background-color: #3d429e;
+/*    background-color: #3d429e;*/
     display: block;
     
     border: none;
@@ -408,7 +413,7 @@ Columns
 .column {
     float: left;
     width: 33.33%;
-    padding: 10px;
+/*    padding: 10px;*/
 }
 
 /* Clear floats after the columns */
@@ -424,6 +429,10 @@ Columns
     padding: 10px;
     margin: auto;
 }
+
+.column-left {padding-right: 10px;}
+.column-middle {padding:0 10px 0 10px}
+.column-right {padding-left: 10px;}
 
 
 /*
