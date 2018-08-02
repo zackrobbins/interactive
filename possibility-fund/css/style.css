@@ -590,8 +590,9 @@ MEDIA QUERIES
         padding: 10px 0;
         }
     
-     .wrapper-bottom .footer-column {
-        padding: 0;
+    footer .wrapper-bottom {
+        border-top: solid 1px #bfbfbf;
+        padding: 1em 0;
         }
     
     footer .wrapper-top {
