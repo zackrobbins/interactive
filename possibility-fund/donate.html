@@ -10,26 +10,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #f5f5f5;">
     
-    <div class="fixed-header">
-        <div class="nav-wrapper">
-            <div class="main-logo">
-                <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg"></a>
-            </div>
-
-            <div class="main-nav">   
-                <div class="topnav" id="myTopnav">
-                    <a href="about.html">About</a>
-                    <a href="approach.html">Approach</a>
-                    <a href="impact.html">Impact</a>
-                    <a href="donate.html#contact-us">Contact</a>
-                    <a href="donate.html" class="cta-box">Donate</a>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-            </div>
+<div class="Navbar">
+    
+    <div class="Navbar__Link-brand main-logo">
+        <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg" alt="The Possibility Fund"></a>
         </div>
-    </div>
+    
+    <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars">Menu</i>
+        </div>
+
+    <nav class="Navbar__Items Navbar__Items--right ">
+        <div class="Navbar__Link Navbar__more-space-above"><a href="about.html">About</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="approach.html">Approach</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="impact.html">Impact</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="donate.html#contact-us">Contact</a></div>
+        
+        <div class="Navbar__Link cta-box Navbar__more-space-below"><a href="donate.html">Donate</a></div>
+    </nav>
+</div>
         
     
     
@@ -44,9 +48,10 @@
     </div>
     
     <div class="module">
+        <div class="divider" id="contact-us"></div>
         <div class="centered">
-            <div class="header" id="contact-us">
-                <a><h1>Working Together to Create Lasting Change</h1></a>
+            <div class="header" >
+                <h1>Working Together to Create Lasting Change</h1>
             </div>
                 <p>For more information on ways to get involved, please contact us:</p>     
             
@@ -80,16 +85,16 @@
     
         
     
-    <footer>
-        <div class="wrapper-top">
+     <footer>
+        <div class="wrapper-top wrapper-bottom">
             <div class="row">
-                <ul class="column address">
+                <ul class="column address column-left">
                     <li><em>The Possibility Fund</em></li>
                     <li>401 Parkway Drive</li>
                     <li>Broomall, PA 19008</li>
                 </ul>
 
-                <ul class="column">
+                <ul class="column column-middle">
                     <li><a href="about.html">About</a></li>
                     <li><a href="approach.html">Approach</a></li>
                     <li><a href="impact.html">Impact</a></li>
@@ -97,7 +102,7 @@
                     <li><a href="donate.html">Donate</a></li>
                 </ul>
 
-                <ul class="column social">
+                <ul class="column social column-right">
                     <li><a href="https://twitter.com/"><img src="images/logo-t.svg" class="social-icon" alt="twitter"></a></li>
                     <li><a href="linkedin.com"><img src="images/logo-li.svg" class="social-icon" alt="linkedin"></a></li>
                     <li><a href="facebook.com"><img src="images/logo-fb.svg" class="social-icon" alt="facebook"></a></li>
@@ -132,6 +137,14 @@
             x.className = "topnav";
         }
     }
+    
+    function classToggle() {
+          const navs = document.querySelectorAll('.Navbar__Items')
+
+          navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+
+        document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
     
 </script>    
     

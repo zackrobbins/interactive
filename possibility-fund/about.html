@@ -12,29 +12,33 @@
 
 <body>
     
-     <div class="fixed-header">
-        <div class="nav-wrapper">
-            <div class="main-logo">
-                <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg"></a>
-            </div>
-
-            <div class="main-nav">   
-                <div class="topnav" id="myTopnav">
-                    <a href="about.html">About</a>
-                    <a href="approach.html">Approach</a>
-                    <a href="impact.html">Impact</a>
-                    <a href="donate.html#contact-us">Contact</a>
-                    <a href="donate.html" class="cta-box">Donate</a>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-            </div>
+<div class="Navbar">
+    
+    <div class="Navbar__Link-brand main-logo">
+        <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg" alt="The Possibility Fund"></a>
         </div>
-    </div>
+    
+    <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars">Menu</i>
+        </div>
+
+    <nav class="Navbar__Items Navbar__Items--right ">
+        <div class="Navbar__Link Navbar__more-space-above"><a href="about.html">About</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="approach.html">Approach</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="impact.html">Impact</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="donate.html#contact-us">Contact</a></div>
+        
+        <div class="Navbar__Link cta-box Navbar__more-space-below"><a href="donate.html">Donate</a></div>
+    </nav>
+</div>
         
         
     <div class="module">
         <div class="centered">
-            <h3>About Us</h3>
+            <h3 class="subtitle">About Us</h3>
         
             <h2 class="intro"><em>The Possibility Fund</em> is an independent, nonprofit, nongovernmental organization. We collaborate closely with community organizations and institutions to uncover and dispel the history, assumptions, and widely-held views constraining what's possible for communities. We use a unique approach that focuses on shifting mindsets to forward communities in reaching their full potential.</h2>
             
@@ -42,49 +46,9 @@
     </div>
     
     <div class="module">
-        <h3>Our Values to Achieve Our Vision</h3>
+        <div class="divider"></div>
+        <h3 class="subtitle">Our Values to Achieve Our Vision</h3>
     </div>
-    
-<!--
-    <div class="module">
-        <div class="row">
-            <div class="two-column">
-                <div class="sub-header red centered">
-                    <h4 class="all-caps">Limitless</h4>
-                        <h4>Expanding the power of <br>the human spirit</h4>
-                </div>
-                    <p class="post-body">We believe in the endless/enduring strength that comes from people's heart. We are relentless when it comes to leveraging the human spirit to create global, sustainable impact.</p>
-            </div>
-
-            <div class="two-column">
-                <div class="sub-header teal centered">
-                    <h4 class="all-caps">Purposeful</h4>
-                    <h4>Passionately driving <br>for the future</h4>
-                </div>
-                    <p class="post-body">We are bold and have an unshakeable stand for change; that is the only way it happens. Every single person can leave the world a better place. Every decision we make is driven by our purpose.</p>
-            </div>
-        </div>
-    
-    
-        <div class="row">
-            <div class="two-column">
-                <div class="sub-header yellow centered">
-                    <h4 class="all-caps">Compelling</h4>
-                    <h4>Bring people together</h4>
-                </div>
-                    <p class="post-body">It takes a village and we bring the village together. We are constantly connecting on a soul-to-soul level to take on the intractable. We know there's a solution, and we'll find it together.</p>
-            </div>
-
-            <div class="two-column">
-                <div class="sub-header purple centered">
-                    <h4 class="all-caps">Optimistic</h4>
-                    <h4>Building a bright future</h4>
-                </div>
-                    <p class="post-body">We believe anything is possible for anyone. Any complicated problem in the world can be reframed and overcome. We are not blind to how the world is right now, but were are clear that we can change it.</p>
-            </div>
-        </div>
-    </div>
--->
     
     
     
@@ -123,16 +87,16 @@
         </div>
     </div>   
     
-    <footer>
+     <footer>
         <div class="wrapper-top">
             <div class="row">
-                <ul class="column address">
+                <ul class="column address column-left">
                     <li><em>The Possibility Fund</em></li>
                     <li>401 Parkway Drive</li>
                     <li>Broomall, PA 19008</li>
                 </ul>
 
-                <ul class="column">
+                <ul class="column column-middle">
                     <li><a href="about.html">About</a></li>
                     <li><a href="approach.html">Approach</a></li>
                     <li><a href="impact.html">Impact</a></li>
@@ -140,7 +104,7 @@
                     <li><a href="donate.html">Donate</a></li>
                 </ul>
 
-                <ul class="column social">
+                <ul class="column social column-right">
                     <li><a href="https://twitter.com/"><img src="images/logo-t.svg" class="social-icon" alt="twitter"></a></li>
                     <li><a href="linkedin.com"><img src="images/logo-li.svg" class="social-icon" alt="linkedin"></a></li>
                     <li><a href="facebook.com"><img src="images/logo-fb.svg" class="social-icon" alt="facebook"></a></li>
@@ -174,7 +138,16 @@
             x.className = "topnav";
         }
     }
-</script>    
+    
+    function classToggle() {
+          const navs = document.querySelectorAll('.Navbar__Items')
+
+          navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+
+        document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+    
+</script>     
     
     
 </body>

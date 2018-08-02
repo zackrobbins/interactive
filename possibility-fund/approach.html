@@ -12,24 +12,28 @@
 
 <body>
     
-    <div class="fixed-header">
-        <div class="nav-wrapper">
-            <div class="main-logo">
-                <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg"></a>
-            </div>
-
-            <div class="main-nav">   
-                <div class="topnav" id="myTopnav">
-                    <a href="about.html">About</a>
-                    <a href="approach.html">Approach</a>
-                    <a href="impact.html">Impact</a>
-                    <a href="donate.html#contact-us">Contact</a>
-                    <a href="donate.html" class="cta-box">Donate</a>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-            </div>
+<div class="Navbar">
+    
+    <div class="Navbar__Link-brand main-logo">
+        <a href="index.html"><img src="images/possibility-fund-identity-v12b.svg" alt="The Possibility Fund"></a>
         </div>
-    </div>
+    
+    <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars">Menu</i>
+        </div>
+
+    <nav class="Navbar__Items Navbar__Items--right ">
+        <div class="Navbar__Link Navbar__more-space-above"><a href="about.html">About</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="approach.html">Approach</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="impact.html">Impact</a></div>
+        
+        <div class="Navbar__Link Navbar__less-space"><a href="donate.html#contact-us">Contact</a></div>
+        
+        <div class="Navbar__Link cta-box Navbar__more-space-below"><a href="donate.html">Donate</a></div>
+    </nav>
+</div>
         
         
     
@@ -37,7 +41,7 @@
         
     <div class="module">
         <div class="centered">
-            <h3>Our Approach</h3>
+            <h3 class="subtitle">Our Approach</h3>
         
             <h2 class="intro"><em>The Possibility Fund</em> puts people ahead of issues. We are building a model to lead systemic change from within. When people create the mindset to think they can build prosperous, bright futures, they’re right. And with the right support, they will.</h2>
             
@@ -51,7 +55,6 @@
             <div class="centered">
 
                 <p class="post-body">We provide access to proven change methodologies. Our work transforms mindsets at an organizational level to build the capacity for people to think differently and act as a sustainable force for change in communities.</p>
-                <br>
                 <p class="post-body">By collaborating with leaders of loval communities institutions, businesses and governments in</p>
             </div>
         </div>
@@ -72,7 +75,7 @@
         
     <div class="module">
         <div class="centered">
-                <h3>Our Holistic Community Approach</h3>
+                <h3 class="subtitle">Our Holistic Community Approach</h3>
                 
 
                 <h2 class="intro">Our “whole village” approach to development galvanized the talents, commitments and energy of all stakeholders including civic, business, and faith-based organizations. Unifying diverse systems will create an aligned commitment to a bright future.</h2>
@@ -82,16 +85,16 @@
         
 
     
-    <footer>
+     <footer>
         <div class="wrapper-top">
             <div class="row">
-                <ul class="column address">
+                <ul class="column address column-left">
                     <li><em>The Possibility Fund</em></li>
                     <li>401 Parkway Drive</li>
                     <li>Broomall, PA 19008</li>
                 </ul>
 
-                <ul class="column">
+                <ul class="column column-middle">
                     <li><a href="about.html">About</a></li>
                     <li><a href="approach.html">Approach</a></li>
                     <li><a href="impact.html">Impact</a></li>
@@ -99,7 +102,7 @@
                     <li><a href="donate.html">Donate</a></li>
                 </ul>
 
-                <ul class="column social">
+                <ul class="column social column-right">
                     <li><a href="https://twitter.com/"><img src="images/logo-t.svg" class="social-icon" alt="twitter"></a></li>
                     <li><a href="linkedin.com"><img src="images/logo-li.svg" class="social-icon" alt="linkedin"></a></li>
                     <li><a href="facebook.com"><img src="images/logo-fb.svg" class="social-icon" alt="facebook"></a></li>
@@ -132,7 +135,16 @@
             x.className = "topnav";
         }
     }
-</script>    
+    
+    function classToggle() {
+          const navs = document.querySelectorAll('.Navbar__Items')
+
+          navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+
+        document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+    
+</script>     
     
     
 </body>

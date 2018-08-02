@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Possibility Fund</title>
+    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/fonts.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="Navbar">
+   <div class="Navbar__Link Navbar__Link-brand">
+      Website title
+    </div>
+    <div class="Navbar__Link Navbar__Link-toggle">
+      <i class="fas fa-bars">Menu</i>
+    </div>
+  <nav class="Navbar__Items">
+    <div class="Navbar__Link">
+      Longer Link
+    </div>
+    <div class="Navbar__Link">
+      Longer Link
+    </div>
+    <div class="Navbar__Link">
+      Link
+    </div>
+  </nav>
+  <nav class="Navbar__Items Navbar__Items--right">
+    <div class="Navbar__Link">
+      Link
+    </div>
+    <div class="Navbar__Link">
+      Link
+    </div>
+  </nav>
+</div>
+    
+
+    
+    <!--  ================
+      JAVASCRIPT
+      ================= -->
+    
+<script>
+            function classToggle() {
+          const navs = document.querySelectorAll('.Navbar__Items')
+
+          navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+
+        document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+    </script>
+
+    </body>
+</html>
