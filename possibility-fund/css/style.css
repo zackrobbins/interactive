@@ -390,8 +390,20 @@ footer input[type=email], select {
     
     font-size: 16px;
     font-family: 'CalibreWeb-Regular', arial, sans-serif;
+    
 */
-}
+}    height: 44px;
+    
+    padding: 8px 10px 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+    font-size: 16px;
+    font-family: 'CalibreWeb-Regular', arial, sans-serif;
+
 
 footer input[type=submit] {
     width: 190px;
